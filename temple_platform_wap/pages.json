@@ -1,0 +1,571 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index2",
+			"style": {
+				"navigationBarTitleText": "江门观音寺（日行一善）",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/project/order/payed/index",
+			"style": {
+				"navigationBarTitleText": "支付结果",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/news/lists/index",
+			"style": {
+				"navigationBarTitleText": "新闻列表",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+				
+			}
+		},
+		{
+			"path": "pages/news/show/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+				
+			}
+		},
+		{
+			"path": "pages/project/lists/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/project/order/lists/index",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/project/order/buy/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/project/order/buy/index2",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/project/order/receipt/index",
+			"style": {
+				"navigationBarTitleText": "电子收据",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/project/record/index",
+			"style": {
+				"navigationBarTitleText": "捐款记录",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/project/show/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/project/donation/index",
+			"style": {
+				"navigationBarTitleText": "功德榜",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+				
+			}
+		},
+		{
+			"path": "pages/user/index/index",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/order/project",
+			"style": {
+				"navigationBarTitleText": "我的功德",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/order/tablet",
+			"style": {
+				"navigationBarTitleText": "我的牌位",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/order/appointment",
+			"style": {
+				"navigationBarTitleText": "我的预约",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/bless/index",
+			"style": {
+				"navigationBarTitleText": "祈福",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/lists/index",
+			"style": {
+				"navigationBarTitleText": "牌位登记",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/show/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/activity/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/activity/detail",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/tablet/activity/payed/index",
+			"style": {
+				"navigationBarTitleText": "支付结果",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/order/buy/type1/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/order/buy/type3/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/order/buy/type2/video/index",
+			"style": {
+				"navigationBarTitleText": "超度牌位登记",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/order/buy/type2/video2/index",
+			"style": {
+				"navigationBarTitleText": "请选择牌位类型",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/order/buy/type2/index",
+			"style": {
+				"navigationBarTitleText": "选择类型",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/order/payed/index",
+			"style": {
+				"navigationBarTitleText": "支付结果",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/appointment/index",
+			"style": {
+				"navigationBarTitleText": "在线预约",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/distribution/index/index",
+			"style": {
+				"navigationBarTitleText": "我的分享",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/distribution/people/index",
+			"style": {
+				"navigationBarTitleText": "我的朋友",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/distribution/integral/index",
+			"style": {
+				"navigationBarTitleText": "我的莲花",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/distribution/integral/shop/lists/index",
+			"style": {
+				"navigationBarTitleText": "莲花商城",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/distribution/integral/shop/show/index",
+			"style": {
+				"navigationBarTitleText": "兑换详情",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/distribution/integral/shop/order/buy/index",
+			"style": {
+				"navigationBarTitleText": "订单提交",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/distribution/integral/shop/order/lists/index",
+			"style": {
+				"navigationBarTitleText": "兑换订单",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/distribution/info/index",
+			"style": {
+				"navigationBarTitleText": "功德主资料",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/distribution/share/index",
+			"style": {
+				"navigationBarTitleText": "我的分享",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/distribution/share/layouts/people",
+			"style": {
+				"navigationBarTitleText": "我的分享",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/meal_coupon/lists/index",
+			"style": {
+				"navigationBarTitleText": "我的餐券",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/meal_coupon/appointment/create_edit",
+			"style": {
+				"navigationBarTitleText": "线上预约",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/meal_coupon/appointment/lists",
+			"style": {
+				"navigationBarTitleText": "我的预约",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/meal_coupon/show/index",
+			"style": {
+				"navigationBarTitleText": "餐券详情",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/manage/index/index",
+			"style": {
+				"navigationBarTitleText": "斋堂管理",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/manage/order/lists/index",
+			"style": {
+				"navigationBarTitleText": "订单管理",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/manage/reserve/lists/index",
+			"style": {
+				"navigationBarTitleText": "今日预定",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/meal_coupon/buy/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/show/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/lists/index",
+			"style": {
+				"navigationBarTitleText": "法物流通",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/shop/cart/index",
+			"style": {
+				"navigationBarTitleText": "福袋",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#A98853",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/order/shop",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/order/buy/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/order/payed/index",
+			"style": {
+				"navigationBarTitleText": "支付结果",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/order/receipt/index",
+			"style": {
+				"navigationBarTitleText": "电子收据",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/room/index/index",
+			"style": {
+				"navigationBarTitleText": "一觉覺禅居",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/room/lists/index",
+			"style": {
+				"navigationBarTitleText": "一觉覺禅居",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/room/show/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/room/order/buy/index",
+			"style": {
+				"navigationBarTitleText": "一觉覺订单",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/room/order/payed/index",
+			"style": {
+				"navigationBarTitleText": "支付结果",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/order/room",
+			"style": {
+				"navigationBarTitleText": "一觉覺订单",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/matin/index",
+			"style": {
+				"navigationBarTitleText": "早课",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/tablet/matin/payed/index",
+			"style": {
+				"navigationBarTitleText": "提交结果",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/staff/login/main",
+			"style": {
+				"navigationBarTitleText": "员工登录",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/staff/index/index",
+			"style": {
+				"navigationBarTitleText": "员工中心",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"selectedColor": "#A98853",
+		"list": [
+		{
+			"pagePath": "pages/index/index",
+			"text": "首页",
+			"iconPath": "static/NA01.png",
+			"selectedIconPath": "static/NA02.png"
+		},
+		{
+			"pagePath": "pages/user/index/index",
+			"text": "个人中心",
+			"iconPath": "static/ND01.png",
+			"selectedIconPath": "static/ND02.png"
+		}]
+	}
+}

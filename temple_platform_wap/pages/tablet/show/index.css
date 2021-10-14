@@ -1,0 +1,105 @@
+.detail {font-size: 16px;}
+.nostar .star{display: none;}
+.topFloat{width: 56px!important;height: 56px!important;}
+.topFloat .one-name{padding: 0 10px;width: 54px!important;height: 54px!important;display: flex;justify-content: center;align-items: center;}
+
+
+/* 頂部 */
+.Dtop .title {padding-left: 13px;font-size: 17px;font-weight: 700;color: #333;padding-top: 10px;background: #fff;line-height: 1.6;}
+.Dtop .amount{padding: 12px 15px 10px;}
+.Dtop .pro .sel-box{background: #e6e2e0;border-radius: 6px;margin: 10px 0;position: relative;}
+.Dtop .pro .sel {background: #ffa470;border-radius: 6px;height: 6px;}
+.Dtop .pro .prov {font-size: 12px;color: #ff6811;line-height: 26px;margin-left: 5px;}
+.Dtop .count .p{color: #333;font-size: 15px;}
+.Dtop .count .p span {color: #ff6811;margin: 0 3px;font-size: 18px;}
+.Dtop .tip{border-top:#CCC 1px solid; background:#FFF; padding:15px; color: #333; font-size:14px; border-bottom: #CCC 1px solid;}
+
+
+/* 感謝愛心人士 */
+.desca {border-bottom: #CCC 1px solid;border-top: #CCC 1px solid;background: #FFF;padding: 15px;margin: 15px 0;}
+.desca .tt span{color: #ff6811;margin: 0 3px;}
+.ctx .imgs {width: 90%;margin-top: 10px;position: relative;}
+.ctx .imgs .ed {background: url('http://wx.ciensi.net/m/picture/ff.png') no-repeat bottom center;}
+.ctx .imgs .li {padding-bottom: 20px;margin-right: 10px;width: 50px;}
+.ctx .imgs .li .head {border-radius: 50%;box-sizing: border-box;width: 50px;height: 50px;border: 2px solid #fff;}
+.ctx .imgs .ed .head {border: 2px solid #ff9558;box-sizing: border-box;}
+.ctx .arr .iconfont{display: flex;font-size: 28px;color: #999;width: 20px;height: 50px;line-height: 50px;margin-top: 10px;}
+.ms {background: #eeefe9;border-radius: 5px;padding: 15px;}
+.ms .ms1 span {color: #ff6811;margin: 0 3px;}
+.ms .ms2 {color: #92928a;font-size: 14px;}
+
+
+/* 详情 */
+.detail {color: #5a5451;}
+.detail .tt {border-bottom: #eee 2upx solid;padding: 0 30upx;margin-bottom: 20upx;display: flex;}
+.detail .tt .name{text-align: center;line-height: 60upx;margin: 0 30upx;font-size: 36upx;padding: 10upx 0;}
+.detail .tt .hover{display: block;border-bottom: #F60 8upx solid;text-align: center;line-height: 60upx;}
+.con-detail{font-size: 16px;line-height: 1.75em;}
+.con-detail .p{text-align: justify;}
+.con-detail .strong,.con-detail .em,.con-detail .span{display: inline;}
+.con-detail .img,.con-detail img{max-width: 100%;}
+
+
+/* 提交 */
+.detail .btn img {width: 20px;height: 20px;margin-right: 5px;vertical-align: -4px;}
+.detail .btn {position: fixed;bottom: 0;width: 100%;width: 100%;height: 35px;line-height: 35px;font-size: 16px;color: #fff;display: inline-block;border-radius: 5px;border: 1px #fe7225 solid;text-align: center;background: #ff6811;}
+
+
+/* 留言 */
+.detail .list {background: #fff;}
+.detail .list .li {margin: 0;border-bottom: 1px solid #e8e7e6;padding: 10px 0;}
+.detail .list .li:last-child{border-bottom: 0;}
+.detail .list .li .tou {float: left;}
+.detail .list .li img {width: 60px;height: 60px;border-radius: 30px;float: left;}
+.detail .list .wenzi {margin-left: 75px;color: #6a6562;}
+.detail .list .gaiup {padding-bottom: 10px;}
+.detail .list .gai1 {color: #b6aeab;min-width: 50px;}
+.detail .list .gai2 span {color: #f25a4c;font-weight: bold;padding: 0 3px;}
+.detail .list .gaitime {padding: 10px 0;line-height: 22px;color: #b1a8a3;}
+
+
+/* 活动牌位提交 */
+.show-tablet .dx-input,
+.show-tablet .dx-cell{font-size: 17px!important;}
+.show-tablet .dx-cell{border: 1px #ddd solid;margin-top: 24upx;border-radius: 12upx;}
+.show-tablet .dx-label{width: 80px!important;}
+.show-tablet .tip{font-size: 28upx;color: #666;margin-top: 8upx;text-align: justify;line-height: 1.4;}
+.show_textarea .dx-cell{border: 1px #ddd solid;border-radius: 6px;margin-top: 10px;padding: 24upx 30upx;}
+.show_textarea .uni-textarea-textarea{line-height: 1.8;}
+
+
+#footer-btn .icon{width: 20px;height: 20px;margin-right: 5px;vertical-align: -4px;}
+#footer-btn .Bitem{width: 60px;}
+/* #footer-btn .BtnG /deep/.form:first-child{width: 40%;}
+#footer-btn .BtnG /deep/.form:last-child{width: 60%;} */
+#footer-btn .BtnG /deep/.form .dxi-btn{padding-left: 10upx;padding-right: 10upx;text-align: center;}
+
+
+/* 滚动文字 */
+.v1-qf-list-item .name {color: #666;font-size: 14px;}
+.v1-qf-list-item .name:hover {color: #000;}
+
+
+/* 通知弹出层 */
+.noticeDiag .dxi-diag-box{background-image: url(/static/noticeBg.jpg);background-repeat: no-repeat;background-size: 100% 100%;}
+.noticeBg{background-image: url(/static/noticeBg.jpg);background-repeat: no-repeat;background-size: 100% 100%;}
+
+
+/* 选择时段 */
+.select-group{padding: 0 30rpx;}
+.select-group .sg-title{font-size: 34rpx;padding: 30rpx 0;color: #000000;}
+.select-group .sg-group{display: flex;flex-wrap: wrap;}
+.select-group .sg-nav{line-height: 74rpx;width: 48%;margin: 0 2% 30rpx 0;text-align: center;font-size: 30rpx;color: #343434;border: 1rpx #eee solid;border-radius: 36rpx;}
+.select-group .sg-nav:nth-child(4n){margin-right: 0;}
+.select-group .cur{background-color: #A98853;border-color: #A98853;color: #fff;}
+
+
+/* 早课类型 */
+.matin-type{display: flex;flex-wrap: wrap;padding: 0 30rpx;}
+.matin-type .mt-nav{line-height: 74rpx;width: 32%;margin: 0 2% 30rpx 0;text-align: center;font-size: 30rpx;color: #343434;border: 1rpx #eee solid;border-radius: 36rpx;}
+.matin-type .mt-nav:nth-child(3n){margin-right: 0;}
+.matin-type .cur{background-color: #ff721f;border-color: #ff721f;color: #fff;}
+.matin-time{padding: 0 30rpx 30rpx;}
+.matin-time ::v-deep .dx-cell{border: 1rpx #eee solid;border-radius: 12rpx;}
+.matin-time ::v-deep .dx-cell:after{display: none;}
+.matin-time ::v-deep .dx-cell .picker{text-align: left;}

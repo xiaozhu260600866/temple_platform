@@ -1,0 +1,3 @@
+.manage-head .head-box{padding: 60upx 40upx 80upx;display: flex;align-items: center;}
+.manage-head .img{width: 120upx;height: 120upx;border-radius: 50%;border: 8upx rgba(255,255,255,0.5) solid;display: flex;margin-right: 30upx;}
+.manage-head .info{flex: 1;font-size: 32upx;color: #fff;line-height: 1.75;}

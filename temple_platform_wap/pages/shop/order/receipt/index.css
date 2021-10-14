@@ -1,0 +1,3 @@
+.re-box .re-li{display: flex;line-height: 30px;padding: 8px 15px;}
+.re-box .re-label{font-size: 15px;color: #555;width: 80px;text-align: right;}
+.re-box .re-value{font-size: 15px;}

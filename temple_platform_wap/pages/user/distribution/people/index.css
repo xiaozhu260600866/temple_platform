@@ -1,0 +1,17 @@
+/* 头部 */
+.share-top{position: fixed;top: 0;left: 0;z-index: 9;width: 100%;}
+.son_tab{position: relative;}
+
+
+/* 其他时间 */
+.other-time{position: absolute;top: 96upx;width: 100%;left: 0;z-index: 3;}
+
+
+/* 人数统计 */
+.people-amount{margin-top: 100upx;padding: 20upx 30upx 0;font-size: 30upx;}
+
+
+/* 人员列表 */
+.people-lists{}
+.people-lists /deep/.dxi-list-msg{align-items: flex-start;margin: 24upx;width: auto;background-color: #fff;border-radius: 12upx;}
+.slot-con .row{padding-top: 12upx;line-height: 36upx;}

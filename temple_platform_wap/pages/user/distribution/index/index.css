@@ -1,0 +1,11 @@
+
+
+/* 头部 */
+.Uinfo{width: 100%;display: flex;align-items: center;position: relative;padding: 60upx 40upx 140upx;z-index: 2;}
+.Uinfo .header-img .img{width: 70px;height: 70px;border-radius: 50%;display: flex;}
+.Uinfo .info{flex: 1;overflow: hidden;}
+.Uinfo .htag{display: flex;align-items: center;}
+.Uinfo .htag .tab{background-color: rgba(0,0,0,0.5);color: #fff;padding: 0 5px;margin-right: 16upx;}
+.Uinfo .info-nav{padding: 0 30upx 0 40upx;line-height: 60upx;font-size: 28upx;border-radius: 30upx;background-color: rgba(255,255,255,0.3);color: #fff;height: 60upx;}
+
+

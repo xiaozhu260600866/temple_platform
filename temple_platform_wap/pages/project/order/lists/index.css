@@ -1,0 +1,14 @@
+
+/* 头部 */
+.order-class{display: flex;}
+.order-class .nav-tab{text-align: center;width: 100%;}
+.order-class .name{height: 50px;line-height: 50px;font-size: 16px;color: #999;display: inline-block;}
+.order-class .selected {color: #A98853;border-bottom: 3px solid #A98853;}
+
+
+/* 项目列表 */
+.Oitem-list .pro-info .limg .img{width: 84px;height: 64px;border-radius: 7px;}
+.Oitem-list .pro-info .rt .td {color: #999b9e;}
+.Oitem-list .pro-info .rt .td span{color: #fd6512;margin: 0 3px;}
+.Oitem-list .btn-group .nav{padding: 0 20px;height: 30px;line-height: 28px;border: 1px #ccc solid;font-size: 12px;color: #999;border-radius: 6px;margin-right: 15px;}
+.Oitem-list .btn-group .nav span{font-size: 12px;padding-left: 10px;}

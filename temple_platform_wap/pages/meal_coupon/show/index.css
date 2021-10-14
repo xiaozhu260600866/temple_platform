@@ -1,0 +1,25 @@
+/* 整体 */
+.showBox{background-color: #fff;border-radius: 12upx;margin: 24upx;overflow: hidden;}
+.top-box{color: #fff;position: relative;}
+.top-box::before{content: '';display: block;position: absolute;bottom: -10upx;left: 20upx;right: 20upx;border-bottom: dotted #fff 20upx;}
+.status-img{position: absolute;top: 0;right: 0;width: 200upx;height: 200upx;z-index: 1;}
+
+/* 券信息 */
+.cash-info{padding: 40upx 15upx;text-align: center;position: relative;z-index: 2;}
+.cash-info .price{font-size: 80upx;line-height: 1;}
+
+/* 图片码 */
+.con-box .qrcode{text-align: center;padding: 30upx 40upx 40upx;}
+.con-box .qrcode .img{width: 360upx;height: 360upx;}
+.con-box .qrcode .txt{color: #666;font-size: 26upx;letter-spacing: 3upx;}
+
+/* 使用信息 */
+.cinfo{border-top: 2upx solid #eee;padding: 16upx 40upx;font-size: 30upx;}
+.cinfo .row{display: flex;margin: 8upx 0;}
+.cinfo .llabel{width: 80px;text-align: right;color: #666;}
+.cinfo .rvalue{flex: 1;}
+
+/* 说明 */
+.explain{border-top: 2upx solid #eee;padding-bottom: 40upx;}
+.explain .title{font-size: 30upx;color: #333;line-height: 48upx;}
+.explain .content{font-size: 30upx;color: #333;line-height: 1.4;padding: 0 40upx;margin-top: 40upx;}

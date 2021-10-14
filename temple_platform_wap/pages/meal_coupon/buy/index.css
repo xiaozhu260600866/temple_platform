@@ -1,0 +1,53 @@
+.detail {font-size: 32upx;}
+
+
+/* 详情 */
+.detail .title{padding: 10px 15px;font-size: 17px;font-weight: 700;color: #333;line-height: 1.6;}
+.detail .content {color: #5a5451;}
+.detail .tt {border-bottom: #eee 2upx solid;padding: 0 30upx;margin-bottom: 20upx;display: flex;}
+.detail .tt .name{text-align: center;line-height: 60upx;margin: 0 30upx;font-size: 36upx;padding: 10upx 0;}
+.detail .tt .hover{display: block;border-bottom: #F60 8upx solid;text-align: center;line-height: 60upx;}
+.con-detail{font-size: 16px;line-height: 1.75em;}
+.con-detail .p{text-align: justify;}
+.con-detail .strong,.con-detail .em,.con-detail .span{display: inline;}
+.con-detail .img,.con-detail img{max-width: 100%;}
+.detail .count{padding: 0 15px 10px 15px;}
+.detail .count .p{color: #333;font-size: 15px;}
+.detail .count .p span {color: #ff6811;margin: 0 3px;font-size: 18px;}
+
+
+.item_tab{padding: 10px 15px;}
+.tabG{display: flex;}
+.tabG .item{width: 110px;height: 40px;line-height: 40px;text-align: center;border: 1px #dfdfdf solid;margin-right: 10px;border-radius: 4px;color: #939393;}
+.tabG .select{position: relative;color: #ff6811;border-color: #ff6811;overflow: hidden;}
+.tabG .select::before{content: "";display: block;position: absolute;right: 5px;top: -1px;width: 6px;height: 10px;border-width: 0 1.5px 1.5px 0;border-color: #fff;border-style: solid;transform: rotate(45deg);z-index: 2;}
+.tabG .select::after{content: "";display: block;position: absolute;right: -22px;top: -22px;width: 40px;height: 40px;background-color: #FF6811;transform: rotate(45deg);z-index: 1;}
+
+
+/* 留言 */
+.detail .list {background: #fff;border-top: 1px solid #e8e7e6;}
+.detail .list .li {margin: 0;border-bottom: 1px solid #e8e7e6;padding: 10px 0;}
+.detail .list .li:last-child{border-bottom: 0;}
+.detail .list .li .tou {float: left;}
+.detail .list .li img {width: 60px;height: 60px;border-radius: 30px;float: left;}
+.detail .list .wenzi {margin-left: 75px;color: #6a6562;}
+.detail .list .gaiup {padding-bottom: 10px;}
+.detail .list .gai1 {color: #b6aeab;min-width: 50px;}
+.detail .list .gai2 span {color: #f25a4c;font-weight: bold;padding: 0 3px;}
+.detail .list .gaitime {padding: 10px 0;line-height: 22px;color: #b1a8a3;}
+
+
+#footer-btn .icon{width: 20px;height: 20px;margin-right: 5px;vertical-align: -4px;}
+#footer-btn .Bitem{width: 60px;}
+
+
+.f-pay-btn{border-radius: 10px!important;background: linear-gradient(to right, #FF8B4D , #FB694F)!important;}
+
+
+/* 选择什么放生 */
+.why-free .why-cell{flex-wrap: wrap;}
+.why-free .why-cell>.dx-cell_hd{width: 100%;}
+.why-free .dx-cell_hd .dx-label{width: 100%!important;padding: 0 0 10px 0!important;}
+.why-free .col_group{flex-wrap: wrap;justify-content: center;}
+.why-free .col_group .dx-cell{margin-left: 0;width: 100px;justify-content: center;font-size: 16px!important;}
+.why-free .col_group .dx-checkbox uni-checkbox{zoom: 120%;}

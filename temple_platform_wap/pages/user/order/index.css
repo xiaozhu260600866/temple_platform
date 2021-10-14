@@ -1,0 +1,41 @@
+.pages-user-order-project,
+.pages-user-order-tablet{background: #fff;}
+
+
+
+/* 类别 */
+.order-class{display: flex;}
+.order-class .nav-tab{text-align: center;width: 100%;}
+.order-class .name{height: 44px;line-height: 44px;font-size: 15px;color: #666;display: inline-block;}
+.order-class .selected {color: #A98853;border-bottom: 3px solid #A98853;}
+
+
+/* 项目列表 */
+.Oitem-list .pro-info .limg .img{width: 84px;height: 64px;border-radius: 7px;}
+.Oitem-list .pro-info .rt .td {color: #666;}
+.Oitem-list .pro-info .rt .td span{color: #f00;margin: 0 3px;}
+.Oitem-list .btn-group .nav{padding: 0 20px;height: 30px;line-height: 28px;border: 1px #999 solid;font-size: 13px;color: #333;border-radius: 6px;margin-right: 15px;}
+.Oitem-list .btn-group .nav span{font-size: 14px;padding-left: 10px;}
+
+
+.Otime-list .rinfo .nav{padding: 0 10px;height: 28px;line-height: 26px;border: 1px #999 solid;font-size: 13px;color: #333;border-radius: 6px;text-align: center;}
+
+
+/* 商城列表 */
+/* 列表 */
+.order_item{background: #fff;margin: 24rpx;border-radius: 12rpx;}
+.order_item .top_date{height: 100rpx;line-height: 100rpx;display: flex;justify-content: space-between;align-items: center;border-bottom: 1rpx #efefef solid;}
+.btn-group{border-top: 1rpx #efefef solid;}
+.btn-group .btn-item{display: flex;justify-content: flex-end;}
+.btn-group .btn-item .btn-nav{min-width: 160rpx;height: 64rpx;line-height: 64rpx;border: 1rpx #FE4543 solid;border-radius: 30rpx;color: #555;font-size: 30rpx;text-align: center;margin-left: 10px;display: block;padding: 0 30rpx;}
+/* .order_item .btn-item .btn-nav:last-child{background: #FE4543;border: 0;color: #fff;line-height: 30px;}
+.order_item .btn-item .obtn{border: 1px #ddd solid!important;background: #fff!important;color: #555!important;} */
+
+
+/* 客房订单 */
+.room_order_item{background: #fff;margin: 24rpx;border-radius: 12rpx;}
+.room_order_item .top_date{display: flex;justify-content: space-between;align-items: center;border-bottom: 1rpx #efefef solid;}
+.room_order_item .con_info{display: flex;padding: 20rpx;}
+.room_order_item .cover .img{width: 140rpx;height: 140rpx;display: flex;border-radius: 8rpx;}
+.room_order_item .info{flex: 1;margin-left: 20rpx;display: flex;align-content: space-between;min-height: 140rpx;flex-wrap: wrap;}
+.room_order_item .btn-nav{background-color: #FE4543;color: #FFFFFF!important;}

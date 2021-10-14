@@ -1,0 +1,16 @@
+/* 房间数 */
+.room-num ::v-deep .tui-numberbox{border: 1rpx #ECECEC solid;}
+.room-num ::v-deep .tui-numbox-icon{padding: 16rpx 20rpx;}
+.room-num ::v-deep .tui-num-input{height: 66rpx!important;line-height: 66rpx!important;background-color: #fff!important;border-width: 0 1rpx 0 1rpx;border-style: solid;border-color: #ECECEC;}
+
+/* 联系人信息 */
+.room-buy ::v-deep .dx-cell,
+.room-buy ::v-deep .dx-input{font-size: 34rpx!important;}
+.room-buy ::v-deep .dx-label .star{display: none;}
+
+
+/* 结算脚部 */
+#buy_footer {height: 100upx;line-height: 100upx;position: fixed;left: 0;bottom: 0;width: 100%;background: #fff;display: flex;align-items: center;z-index: 1;border-top: 1upx solid #f7f7f7;}
+#buy_footer .f_left{color: #fe5454;flex: 1;overflow: hidden;}
+#buy_footer .f_right ::v-deep .nav{color: #fff;background: #fe5454;font-size: 30upx;border-radius: 40upx;line-height: 80upx;padding: 0 50upx!important;margin: 0 10upx;}
+#buy_footer .f_right ::v-deep .nav-o{color: #232325;font-size: 30upx;border-radius: 40upx;line-height: 78upx;padding: 0 50upx!important;margin: 0 10upx;border: 1upx solid #8c8c8c;}

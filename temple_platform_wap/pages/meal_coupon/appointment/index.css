@@ -1,0 +1,18 @@
+/* 在线预约 */
+.coupon-appointment,
+.coupon-appointment .dx-cell,.coupon-appointment .dx-input{font-size: 34upx!important;}
+.coupon-appointment .dx-dateTime .picker{text-align: left!important;}
+.coupon-appointment .dx-cell .col_group{justify-content: flex-start;}
+.coupon-appointment .dx-cell .col_group .dx-cell{margin: 0 15px 0 0;}
+.coupon-appointment .dx-text{border: 1upx #dcdfe6 solid;border-radius: 8upx;padding: 20upx}
+
+
+/* 我的预约 */
+.mca-item .item-top{font-size: 30upx;color: #838383;line-height: 40upx;padding: 20upx 30upx;border-bottom: 1upx #eee solid;}
+.mca-item .item-con{padding: 16upx 30upx;}
+.mca-item .c-row{display: flex;padding: 12upx 0;line-height: 40upx;font-size: 32upx;color: #434343;}
+.mca-item .c-row .llabel{width: 168upx;}
+.mca-item .c-row .rvalue{flex: 1;overflow: hidden;}
+.mca-item .item-btn{display: flex;padding: 20upx 30upx;border-top: 1upx #eee solid;justify-content: flex-end;}
+.mca-item .item-btn .nav{min-width: 180upx;text-align: center;height: 68upx;line-height: 68upx;border: 1upx #ddd solid;color: #666;font-size: 30upx;padding: 0 30upx;border-radius: 34upx;margin-left: 20upx;}
+.mca-item .item-btn .nav.on{background-color: #A98853;border-color: #A98853;color: #fff;}

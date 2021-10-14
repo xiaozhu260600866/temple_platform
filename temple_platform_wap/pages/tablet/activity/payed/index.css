@@ -1,0 +1,27 @@
+
+img {width: 100%;border: none;}
+.thanksWord {background: url(http://mat1.gtimg.com/gongyi/m/wx/thanks_page/sloganBg.png) no-repeat;width: 90%;padding-top: 14px;margin-left: 5%;margin-right: 5%;height: 58px;background-size: 100% 100%;color: #fff;font-weight: 100;font-size: 15px;text-align: center;position: absolute;bottom: 0px;font-family: arial;}
+#fukun {position: relative;}
+.thanksWord .first_row {display: block;line-height: 18px;margin-top: 5px;}
+.thanksWord .second_row {display: inline-block;line-height: 18px;font-size: 12px;}
+.fix {position: fixed;bottom: 0;text-align: center;background: #ff7713;color: #FFF;line-height: 40px;width: 100%;}
+.fix a {color: #FFF;}
+
+dot {
+    display: inline-block; 
+    height: 1em;
+    line-height: 1;
+    text-align: left;
+    vertical-align: -.25em;
+    overflow: hidden;
+}
+dot::before {
+    display: block;
+    content: '......\A.....\A....\A...\A..\A.';
+    white-space: pre-wrap;
+    animation: dot 1s infinite step-start both;
+}
+@keyframes dot {
+    33% { transform: translateY(-2em); }
+    66% { transform: translateY(-1em); }
+}

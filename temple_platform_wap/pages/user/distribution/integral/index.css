@@ -1,0 +1,12 @@
+.integral-head{position: relative;}
+.integral-head .bg{width: 100%;}
+.integral-head .count{position: absolute;top: 80upx;left: 60upx;}
+.integral-head .count .num{font-size: 60upx;}
+
+
+/* 其他时间 */
+.integral-time{position: relative;}
+.other-time{position: absolute;top: 102upx;width: 100%;left: 0;z-index: 3;}
+.select-date .dx-select{border-bottom: 0;}
+.select-date .dx_ft-access{padding-left: 6upx;}
+.select-date .dx_ft-access:before{border-width: 1px 1px 0 0;transform: matrix(1,.9,1,-.9,0,0);top: -4upx;border-color: #777;}

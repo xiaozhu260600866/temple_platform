@@ -1,0 +1,10 @@
+.share-lists{margin-top: 130upx;}
+.share-lists /deep/.dxi-list-msg{align-items: flex-start;width: auto;}
+.share-lists /deep/.msg-right{padding: 0;}
+
+.read-people{display: flex;padding: 24upx 30upx 24upx 54upx;align-items: center;}
+.read-people .read-group{display: flex;flex: 1;align-items: center;}
+.read-people .p-item{margin-left: -24upx;}
+.read-people .p-item .img{width: 64upx;height: 64upx;border-radius: 50%;display: flex;}
+
+.more-people /deep/.dxi-list-msg{align-items: flex-start;}

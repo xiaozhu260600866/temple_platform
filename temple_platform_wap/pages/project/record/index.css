@@ -1,0 +1,10 @@
+.detail .top .yqjrank {line-height: 44px;background: #ffffff;padding: 0 20px;border-bottom: 1px solid #d7d7d6;color: #5a5451;}
+.detail .top .yqjrank .tt {font-size: 16px;}
+.detail .top .yqjrank .tt span {color: #ff6811;}
+.add {margin: 15px;background: #FFF;border: 1px solid #d7d7d6;border-radius: 7px;}
+.add .item {border-bottom: #d7d7d6 1px dotted;}
+.add .item .img {width: 42px;height: 42px;border-radius: 7px;position: relative;display: flex;}
+.add .item .zi {color: #999b9e;font-size: 12px;}
+.add .item .zi .tt {font-size: 16px;color: #393939;line-height: 24px;}
+.add .item .zi .td {font-size: 16px;color: #999b9e;line-height: 24px;}
+.add .item .tp {font-size: 14px;overflow: hidden;color: #999b9e;padding: 10px 15px 15px 15px;}

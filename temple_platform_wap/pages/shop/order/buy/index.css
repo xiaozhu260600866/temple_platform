@@ -1,0 +1,4 @@
+/* 计算与优惠信息 */
+#calculation {padding: 20rpx 0;}
+#calculation .list-group {padding: 0 30rpx;line-height: 80rpx;display: flex;justify-content: space-between;}
+#calculation .list-group .txt {font-size: 32rpx;}

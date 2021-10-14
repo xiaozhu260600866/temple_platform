@@ -1,0 +1,9 @@
+.online-app .dx-select .dx-cell_bd .dx-label,
+.online-app .dx-select .dx-cell_bd .picker,
+.online-app .dx-dateTime .dx-cell_bd .picker
+{text-align: left;}
+.online-app .dx-cell,.online-app input,.dx-cell .dx-text{font-size: 36upx!important;}
+
+.app-nav .dxi-btn{background-color: #A98853;border-color: #A98853;}
+
+.app-success .iconfont{font-size: 140upx;line-height: 140upx;}

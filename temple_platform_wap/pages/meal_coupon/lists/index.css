@@ -1,0 +1,13 @@
+.meal-list .list_box{background-color: #fff;margin-bottom: 24upx;}
+.meal-list .list_item{display: flex;position: relative;border-radius: 12upx;overflow: hidden;color: #333;}
+.meal-list .item_left{width: 180upx;padding: 20upx 0;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;text-align: center;position: relative;background-image: linear-gradient(to bottom right, rgba(169, 136, 83,1) , rgba(169, 136, 83,0.7));line-height: 1;}
+.meal-list .item_left::before{content: '';display: block;border-left: dotted #fff 14upx;position: absolute;top: -8upx;bottom: -8upx;left: -8upx;}
+.meal-list .item_right{display: flex;flex-wrap: wrap;align-content: space-between;position: relative;z-index: 2;padding: 20upx 10upx 20upx 20upx;flex: 1;z-index: 2;border-bottom: 1upx rgba(169, 136, 83, 0.15) solid;width: 100%;}
+.meal-list .ir-bottom{align-items: center;line-height: 1.6;}
+.meal-list .ir-bottom .time{font-family: Calibri;}
+.meal-list .status{position: relative;padding: 20upx;display: flex;align-items: center;justify-content: flex-end;}
+.meal-list .status .nav{min-width: 180upx;text-align: center;height: 68upx;line-height: 68upx;border: 1upx #ddd solid;color: #666;font-size: 30upx;padding: 0 30upx;border-radius: 34upx;margin-left: 20upx;}
+.meal-list .status .nav.no{color: #999;border-color: #ddd;background-color: #f5f5f5;}
+.meal-list .status .nav.on{background-color: #A98853;border-color: #A98853;color: #fff;}
+.meal-list .status-icon{position: absolute;top: 0;right: 0;z-index: 1;}
+.meal-list .status-icon .img{width: 180upx;height: 180upx;}

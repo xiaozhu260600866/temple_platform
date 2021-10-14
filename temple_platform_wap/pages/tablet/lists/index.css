@@ -1,0 +1,8 @@
+#project_list .item{border-bottom: 1px solid #ebebeb;}
+#project_list .item .img {width: 95px;height: 72px;border-radius: 7px;}
+#project_list .item .rt {color: #999b9e;}
+#project_list .item .rt .tn {height: 15px;}
+#project_list .item .rt .tt {color: #393939;line-height: 1;}
+#project_list .item .rt .td {color: #999b9e;height: 29px;}
+#project_list .item .rt .tp .r{color: #fd6512;margin: 0 3px;}
+#project_list .item .rt .iconfont{color: #A98853;}

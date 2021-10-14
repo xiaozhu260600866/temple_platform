@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'iconfont';  /* Project id 906512 */
+  src: url('//at.alicdn.com/t/font_906512_lcx0tnhenad.woff2?t=1631674388887') format('woff2'),
+       url('//at.alicdn.com/t/font_906512_lcx0tnhenad.woff?t=1631674388887') format('woff'),
+       url('//at.alicdn.com/t/font_906512_lcx0tnhenad.ttf?t=1631674388887') format('truetype');
+}
+
+/* 后台图标 - 通用 */
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.icon-left:before{content: "\e910";}/* 左 */
+.icon-right:before{content: "\e911";}/* 右 */
+.icon-top:before{content: "\e913";}/* 上 */
+.icon-bottom:before{content: "\e912";}/* 下 */
+.icon-off:before{content: "\ea03";}/* 关闭 */
+
+
+/* 融e推 */
+.icon-temple-home:before{content: "\e7e3";}/* 首页 */
+.icon-temple-activity:before{content: "\e610";}/* 活动管理 */
+.icon-temple-tablet:before{content: "\e621";}/* 牌位管理 */
+.icon-temple-project:before{content: "\ef002";}/* 日行一善 */
+.icon-temple-offline:before{content: "\e60c";}/* 线下捐赠 */
+.icon-temple-appointment:before{content: "\e668";}/* 预约订单 */
+.icon-temple-article:before{content: "\e6e6";}/* 文章管理 */
+.icon-temple-config:before{content: "\e63b";}/* 设置 */
+.icon-temple-shop:before{content: "\e600";}/* 商城 */
+.icon-temple-integral:before{content: "\e97c";}/* 积分商城 */
+.icon-temple-vip:before{content: "\e7e4";}/* 会员管理 */
+.icon-temple-staff:before{content: "\ef004";}/* 员工管理 */
+.icon-temple-room:before{content: "\e60f";}/* 员工管理 */
+.icon-temple-coupon:before{content: "\e720";}/* 券 */
+
+
+
+.icon-temple-:before{content: "\e";}/*  */

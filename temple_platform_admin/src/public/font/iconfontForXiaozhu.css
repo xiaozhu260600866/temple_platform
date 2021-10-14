@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 594334 */
+  src: url('//at.alicdn.com/t/font_594334_46ean8nyvm3d6lxr.eot');
+  src: url('//at.alicdn.com/t/font_594334_46ean8nyvm3d6lxr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_594334_46ean8nyvm3d6lxr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_594334_46ean8nyvm3d6lxr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_594334_46ean8nyvm3d6lxr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+ 
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before{content: "\e661";}
