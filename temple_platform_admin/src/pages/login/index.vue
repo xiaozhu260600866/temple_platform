@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<div class="login-footer">
-			<p><span>江门市叱石观音寺</span></p>
+		<!-- 	<p><span>江门市叱石观音寺</span></p> -->
 			<!-- <p><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备14075094号-1</a></p> -->
 		</div>
 	</section>
