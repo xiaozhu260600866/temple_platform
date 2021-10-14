@@ -65,7 +65,7 @@
 			"path": "pages/project/order/buy/index",
 			"style": {
 				"navigationBarTitleText": "",
-				"enablePullDownRefresh": true,
+				"enablePullDownRefresh": false,
 				"navigationStyle": "custom"
 			}
 		},

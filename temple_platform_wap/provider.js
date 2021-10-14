@@ -1,9 +1,9 @@
 //判断那个端登陆
-let siteName = 'https://temple-platform.doxinsoft.com';
+let siteName = 'https://rxys.doxinsoft.com';
 uni.setStorageSync('siteName', siteName);
 
 let site_name = uni.getStorageSync('siteName');
-let gotoWechat = uni.getStorageSync("gotoWechat180");
+let gotoWechat = uni.getStorageSync("gotoWechat181");
 let userInfo = uni.getStorageSync('userInfo');
 
 if(getOptions("site_name")){
@@ -68,7 +68,7 @@ if (!gotoWechat) {
 	//alert(url);
 	let newUrl_ = url.replace("/?from=singlemessage#", "");
 	console.log(newUrl_);
-	uni.setStorageSync("gotoWechat180", 1);
+	uni.setStorageSync("gotoWechat181", 1);
 	window.location.href = newUrl_;
 }
 
