@@ -1,0 +1,22 @@
+
+
+
+.stuff-sec{border-left: 1px #eee solid;border-top: 1px #eee solid;}
+.stuff-sec .sec-group{width: 100%;border-bottom: 1px #eee solid;box-sizing: border-box;text-align: center;padding: 24px 0;}
+.stuff-sec .sec-group:nth-child(2n){border-right: none;}
+.stuff-sec .sec-group .img{width: 40px;height: 40px;margin-bottom: 10px;}
+.stuff-sec .sec-group .p {font-size: 15px;color: #777;line-height: 18px;}
+.stuff-sec .sec-group .num{font-family: Arial;font-size: 19px;color: #415161;line-height: 22px;margin-top: 8px;}
+.stuff-sec .sec-group .num span{font-size: 13px;color: #999;}
+
+
+.account_nav{display: flex;height: 100upx;line-height: 100upx;}
+.account_nav .nav{border: 1upx #f2f2f2 solid;flex: 1;text-align: center;margin-right: -1px;font-size: 32upx;}
+.account_nav .cur{border-bottom-color: #E41F19;color: #E41F19;border-bottom-width: 3px;}
+
+
+/* 统计 */
+.ac-group .ac-row{display: flex;justify-content: space-between;align-items: center;padding: 24upx 30upx;border-bottom: 2upx #f2f2f2 solid;}
+.ac-group .ac-row .label{font-size: 32upx;color: #666;line-height: 48upx;flex: 1;padding-right: 30upx;}
+.ac-group .ac-row .value{font-size: 34upx;color: #415161;line-height: 48upx;height: 48upx;}
+.ac-group .ac-row .ellipsis{color: #999;line-height: 48upx;}

@@ -1,0 +1,32 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/staff/index/index",
+			"style": {
+				"navigationBarTitleText": "员工中心",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/staff/login/main",
+			"style": {
+				"navigationBarTitleText": "员工登录",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		}
+		
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"selectedColor": "#A98853",
+		"list": [
+		]
+	}
+}

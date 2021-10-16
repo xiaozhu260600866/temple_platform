@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'iconfont';  /* Project id 1849379 */
+  src: url('https://at.alicdn.com/t/font_1849379_olh4btkq6w8.woff2?t=1633913842613') format('woff2'),
+       url('https://at.alicdn.com/t/font_1849379_olh4btkq6w8.woff?t=1633913842613') format('woff'),
+       url('https://at.alicdn.com/t/font_1849379_olh4btkq6w8.ttf?t=1633913842613') format('truetype');
+}
+
+/* 定制项目 */
+
+.iconfont {
+ font-family: "iconfont" !important;
+ font-style: normal;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+.icon-right:before{content: "\e601";}/* 右 */
+.icon-bottom:before{content: "\e600";}/* 下 */
+.icon-off:before{content: "\f624";}/* 关闭 */
+.icon-heart-o:before{content: "\e67f";}/* 空心 */
+.icon-home:before{content: "\e652";}/*  */
+.icon-service:before{content: "\e605";}/*  */
+.icon-like-circle:before{content: "\f228";}/*  */
+.icon-share:before{content: "\e7d8";}/* 分享 */
+.icon-intergral-order:before{content: "\e69e";}/* 积分 */
+.icon-tel:before{content: "\f63d";}/* 电话 */
+.icon-cart:before{content: "\e60d";}/* 购物车 */
+.icon-cart-fill:before{content: "\e60c";}/* 购物车 */
+.icon-luckBag:before{content: "\e613";}/* 福袋 */
+.icon-luckBag-fill:before{content: "\e641";}/* 福袋 */
+
+
+.icon-user-record:before{content: "\e60e";color: #A98853;}/* 我的功德 */
+.icon-user-tablet:before{content: "\f228";color: #A98853;}/* 我的牌位 */
+.icon-user-coupon:before{content: "\a610";color: #A98853;}/* 我的餐券 */
+.icon-user-shop:before{content: "\e604";color: #A98853;}/* 我的餐券 */
+.icon-user-appointment:before{content: "\e603";color: #A98853;}/* 我的预约 */
+.icon-user-service:before{content: "\e63f";color: #A98853;}/* 客堂电话 */
+.icon-user-phone:before{content: "\e61f";color: #A98853;}/* 客堂手机 */
+.icon-user-location:before{content: "\f6a2";color: #A98853;}/* 一键导航 */
+.icon-user-share:before{content: "\e6c0";color: #A98853;}/* 我的分享 */
+.icon-user-room:before{content: "\e610";color: #A98853;}/* 我的分享 */
+
+
+.icon-dis-share:before{content: "\e62c";}/* 我的分享 */
+.icon-dis-integral:before{content: "\e606";}/* 我的福分 */
+.icon-dis-people:before{content: "\e624";}/* 我的功德主*/
+.icon-dis-integral-shop:before{content: "\e608";}/* 莲花兑换*/
+
+.icon-pay-no:before{content: "\e988";color: #E84335;}/* 支付失败 */
+.icon-pay-yes:before{content: "\e676";color: #09BB07;}/* 支付成功 */

@@ -1,0 +1,42 @@
+
+.pay .weui-label{width: 95px;}
+.pay .box-item{margin-bottom: 12px;background: #fff;}
+.pay .weui-cell{padding: 8px 15px;color: #333;}
+
+
+/* 金额 */
+.pay-price .item{min-width:calc(25% - 10px);margin: 5px;border: 1px #e1e1e1 solid;border-radius: 4px;text-align: center;line-height: 36px;height: 38px;padding: 0 10px;}
+.pay-price .item .price{color: #aaa;text-align: center;font-size: 18px;color: #ff721f;}
+.pay-price .item.select{background: #ff721f;border-color: #ff721f;}
+.pay-price .item.select .price{color: #fff!important;}
+.pay-price .other{flex: 1;overflow: hidden;width: 100%;display: flex;align-items: center;}
+.pay-price .other.select{background: #fff;}
+
+.anonymous .select{width: 14px;height: 14px;border: 1px #ccc solid;border-radius: 3px;margin-right: 3px;}
+.anonymous .yes:before{content:'';display:block;width: 8px;height: 4px;transform: rotate(-45deg);border-width: 0 0 1px 1px;border-style: solid;border-color: #f00;margin-top: 2px;margin-left: 2px;}
+
+.order-price .weui-cell{padding: 0 15px;}
+.content .weui-cell{border-bottom: 0;}
+/* .content .weui-input{line-height: 20px;color: #999;width: 100%;border: 1px #e1e1e1 solid;padding: 10px;border-radius: 6px;} */
+
+
+.pay .top {border-top: 1px solid #dad7d0;border-bottom: 1px solid #d2d2d2;line-height: 40px;}
+.pay .top .tip{color: #56504d;}
+.pay .top .close {width: 40px;height: 40px;text-align: center;}
+.pay .box {margin: 20px;}
+.pay .box .tb {width: 100%;font-size: 16px;color: #b0a7a2;}
+.pay .box .tb .ed{border: 2px solid #f37b30;background: url('http://wx.ciensi.net/m/picture/yqj_selected.png') no-repeat right top;}
+.pay .box .tb .sel{font-size: 14px;line-height: 26px;border: 1px solid #c5c0b8;border-radius: 5px;word-break: break-all;word-wrap: break-word;background: #fff;padding: 4px 5px;text-align: center;width: 100%;outline: none;height: 38px;color: #000;}
+.pay .box .Info .sel{display: flex;text-align: left;}
+.pay .box .Info .sel .name{color: #f00;}
+.pay .box .Info .sel .input{flex: 1;overflow: hidden;width: 100%;text-align: left;}
+
+
+/* .pay .anonymous .anonymouscheck {width: 12px;height: 12px;vertical-align: -1px;}
+.pay .anonymous {font-size: 14px;color: #b0a7a2;margin-top: 10px;text-align: center;} */
+.other {width: 14px;height: 14px;float: right;margin-right: -5px;margin-top: -5px;display: block;}
+.pay .box .tb .sel input {border: 0;width: 90px;height: 25px;font-size: 16px;color: #fc7d37;text-align: center;-webkit-appearance: none;}
+.pay .box .btn_ {margin-top: 18px;width: 100%;height: 37px;line-height: 35px;font-size: 16px;color: #fff;display: inline-block;border-radius: 5px;text-align: center;background: #ff6c0a;}
+.remark{font-size: 14px;line-height: 26px;border: 1px solid #c5c0b8;border-radius: 5px;word-break: break-all;word-wrap: break-word;background: #fff;padding: 4px 5px;text-align: left;width: 100%;outline: none;}
+
+
