@@ -2,11 +2,11 @@
 	<section>
 		<div class="login-header">
 			<div class="main-width">
-				<div class="login-logo"><img src="https://temple.doxinsoft.com/images/admin/logo.jpg"></div>
+				<div class="login-logo"><img src="https://rxys.doxinsoft.com/images/admin/logo.jpg"></div>
 				<!-- <div class="service float_r">技术服务：0750-3229010</div> -->
 			</div>
 		</div>
-		<div id="login-content" style="background-image: url(https://temple.doxinsoft.com/images/admin/login_bg.jpg);background-position: center center;background-repeat: no-repeat;">
+		<div id="login-content" style="background-image: url(https://rxys.doxinsoft.com/images/admin/login_bg.jpg);background-position: center center;background-repeat: no-repeat;">
 			<div class="main-width clear widthLimit">
 				<div class="loginForm">
 					<div class="control-box">
