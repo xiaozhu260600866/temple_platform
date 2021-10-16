@@ -783,7 +783,6 @@ export default new Router({
 					path: 'setting*',
 					url: '/vueadmin/setting',
 					name: '员工帐号',
-					hidden:true,
 					open: false,
 					iconCls: 'iconfont icon-temple-staff', //图标样式class
 					component: resolve => require(['../p'], resolve),
@@ -811,6 +810,7 @@ export default new Router({
 							path: 'role*',
 							url: '/vueadmin/setting/role',
 							name: '角色列表',
+							hidden:true,
 							meta: {
 							   keepAlive: false // 需要被缓存
 							},

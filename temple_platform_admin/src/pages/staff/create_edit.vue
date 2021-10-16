@@ -17,7 +17,7 @@
 	                <el-input v-model="ruleForm.password" style="margin-right: 5px" type="password"></el-input>
 	            </el-form-item>
 			</div>
-            <el-form-item label="角色"  :rules="[{ required: true, message: '角色不能为空'}]">
+        <!--    <el-form-item label="角色"  :rules="[{ required: true, message: '角色不能为空'}]">
             	<el-select v-model="ruleForm.role_id" placeholder="请选择角色">
             		<el-option :label="v.name" :value="v.id" v-for="v in roleArr"></el-option>
             	</el-select>
@@ -29,7 +29,7 @@
 						<el-option label="大斋堂" value="大斋堂"></el-option>
 					</el-select>
 				</el-form-item>
-			</div>
+			</div> -->
 		<!-- 	<div class="group-item flex">
 				<el-form-item label="性别">
 					<el-select v-model="gender" placeholder="请选择性别">

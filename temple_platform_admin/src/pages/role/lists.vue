@@ -57,7 +57,7 @@ export default {
 	},
 	methods: {
 		ajax() {
-			this.getAjax(this, { type: this.getOptions('type') }, msg => {});
+			this.getAjax(this, { type: 0 }, msg => {});
 		},
 		selsChange: function(sels) {
 			this.sels = sels;

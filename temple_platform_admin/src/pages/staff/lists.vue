@@ -12,7 +12,7 @@
 					<el-form-item>
 						<el-button type="primary" @click="toSearch">查询</el-button>
 						<!-- <el-button type="primary" @click="$refs.category.ajax()">部门</el-button> -->
-                        <el-button type="primary" @click="synchronize">同步企业微信</el-button>
+                    <!--    <el-button type="primary" @click="synchronize">同步企业微信</el-button> -->
 					</el-form-item>
 				</el-col>
 				<el-form-item>
@@ -24,8 +24,8 @@
 			<el-table-column label="姓名" min-width="60">
 				<template scope="scope">{{ scope.row.user.userInfo.name }}</template>
 			</el-table-column>
-			 <el-table-column label="饭堂" min-width="140">
-				<template scope="scope">{{ scope.row.user.dinner_house }}</template>
+			 <el-table-column label="帐号" min-width="140">
+				<template scope="scope">{{ scope.row.user.username }}</template>
 			</el-table-column>
 			<el-table-column label="电话" width="120">
 				<template scope="scope">{{ scope.row.user.userInfo.phone }}</template>
@@ -33,11 +33,6 @@
 			<el-table-column label="日期" width="170">
 				<template scope="scope">{{ scope.row.created_at }}</template>
 			</el-table-column>
-            <el-table-column label="BOSS雷达" width="90" >
-            	<template scope="scope">
-            		<el-switch v-model="scope.row.user.userInfo.see_work2 " on-text="" off-text="" :active-value="1" :inactive-value="0" @change="editField(scope.row.user.userInfo,'see_work2')"> </el-switch>
-            	</template>
-            </el-table-column>
 			<el-table-column label="操作" width="320">
 				<template scope="scope">
 					<el-button type="default" size="mini" @click="scope.row.user.userInfo.fclass =scope.row.user.fclass;scope.row.user.userInfo.role_id =scope.row.user.role_id;scope.row.user.userInfo.username =scope.row.user.username;scope.row.user.userInfo.see =scope.row.user.see;scope.row.user.userInfo.userid =scope.row.user.weixin_userid;$refs.createEdit.ajax(scope.row.user.userInfo,data.merchantLists,data.department,data.productClass,data.roleArr)">编辑</el-button>
