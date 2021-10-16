@@ -11,7 +11,7 @@ page{background: #fff;}
 .login-list{padding: 30rpx 30rpx 0;}
 
 /* 信息填写 */
-.login-info .dx-cell{border-color: #ddd;}
+.login-info .dx-cell:after{background-color: #ddd;left: 0;}
 .login-info .slot-icon .iconfont{font-size: 36rpx;color: #666;padding-right: 30rpx;}
 .login-info .dx-input{font-size: 36rpx!important;}
 .login-info .login-pla{font-size: 34rpx!important;}
