@@ -62,6 +62,7 @@
 			formSubmit(unionId) {
 				this.postAjax("/staff/login", this.ruleform).then(msg => {
 					if (msg.data.status == 2) {
+						uni.setStorageSync('site_name', msg.data.user.site_name);	
 						return this.goto("/pages/staff/index/index");
 					}
 				});
