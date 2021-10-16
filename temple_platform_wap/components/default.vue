@@ -73,6 +73,7 @@ export default {
 				
 				 let source = this.getSiteName + '/h5/';
 				var url = this.getSiteName+'/openid?page='+pages+'&source='+source+'&site_name='+uni.getStorageSync("site_name");
+				console.log("分享url",url)
 				// let site_name = this.getSiteName;
 				//  
 				//  let url = "";
