@@ -69,6 +69,7 @@
 		},
 		methods: {
 			toIndex(){
+				return this.goto("/pages/index/index",2);
 				window.location.href="https://temple-platform.doxinsoft.com/h5?site_name="+uni.getStorageSync('site_name');
 			},
 			ajax() {

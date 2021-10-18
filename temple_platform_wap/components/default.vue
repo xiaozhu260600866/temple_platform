@@ -59,21 +59,24 @@ export default {
 				    }
 				    var argname = pairs[i].substring(0, pos); //提取name
 				    var value = pairs[i].substring(pos + 1); //提取value
-					if(argname !='openid' && argname !="nickname" && argname!="source" && argname!="headimgurl"){
+					if(argname !='openid' && argname !="nickname" && argname!="source" && argname!="headimgurl"&& argname!="site_name"){
 						 args[argname] = unescape(value); //存为属性
 					}
 				   
 				}
 				 var pages=getCurrentPages();//页面指针数组 
 				 var prepage=pages[pages.length-1];//上一页面指针 
-				 var pages= '/'+prepage.route+'&';
+				 var pages= '/'+prepage.route+'?';
 				for (let key1 in args ) {
 					pages+=key1 + '='+args[key1]+'&';
 				}
 				
+				
 				 let source = this.getSiteName + '/h5/';
-				var url = this.getSiteName+'/openid?page='+pages+'&source='+source+'&site_name='+uni.getStorageSync("site_name");
+				//var url = this.getSiteName+'/openid?page='+pages+'&source='+source+'&site_name='+uni.getStorageSync("site_name");
+				 var url = source+'#'+pages+'site_name='+uni.getStorageSync("site_name");
 				console.log("分享url",url)
+				//alert(url);
 				// let site_name = this.getSiteName;
 				//  
 				//  let url = "";
