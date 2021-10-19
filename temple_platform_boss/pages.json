@@ -3,7 +3,7 @@
 		{
 			"path": "pages/staff/index/index",
 			"style": {
-				"navigationBarTitleText": "员工中心",
+				"navigationBarTitleText": "数据统计",
 				"enablePullDownRefresh": true,
 				"navigationStyle": "custom"
 			}
