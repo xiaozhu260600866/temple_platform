@@ -616,7 +616,19 @@ export default new Router({
 							name: '文章管理',
 							iconCls: 'iconfont icon8', //图标样式class
 							component: resolve => require(['../pages/article/lists'], resolve),
-							permission: [],
+							permission: [{
+								name: '删除',
+								url: '/vueadmin/article/lists/del'
+							}, {
+								name: '新建',
+								url: '/vueadmin/article/lists/create'
+							}, {
+								name: '修改',
+								url: '/vueadmin/article/lists/edit'
+							}, {
+								name: '类别',
+								url: '/vueadmin/article/lists/class'
+							}, ]
 
 						},
 						{

@@ -37,12 +37,12 @@
 			<el-table-column label="操作" width="170">
 				<template scope="scope">
 					<el-button type="primary" size="mini" @click="$router.push({path:'/vueadmin/article/edit?id='+scope.row.id})" >编辑</el-button>
-					<el-button size="mini" @click="handleDel(scope.$index, scope.row)" v-if="data.auth.canDel">删除</el-button>
+					<el-button size="mini" @click="handleDel(scope.$index, scope.row)">删除</el-button>
 				</template>
 			</el-table-column>
 		</el-table>
 		<div class="toolbar foot-tool">
-			<el-button type="danger" @click="delAll" :disabled="this.sels.length===0 " v-if="data.auth.canDel">批量删除</el-button>
+			<el-button type="danger" @click="delAll" :disabled="this.sels.length===0">批量删除</el-button>
 			<el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="data.thisPage" :page-sizes="[6]" :page-size="6" layout="total, sizes, prev, pager, next, jumper" :total="data.total">
 			</el-pagination>
 		</div>
