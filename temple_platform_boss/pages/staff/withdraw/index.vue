@@ -1,0 +1,106 @@
+<template>
+	<view>
+		<page :parentData="data" :formAction="formAction"></page>
+		<view v-if="data.user">
+			<view class="withdraw p15 bg-f mb12">
+				<view class="fs-15 fc-6 mb10">可提现金额<text class="Arial plr5">{{putaway1amount.toFixed(2)}}</text>元</view>
+				<view class="withdraw-box">
+					<view class="box-label">提现金额</view>
+					<weui-input v-model="ruleform.amount" myclass="input" placeholder="请输入提现金额" type="text" name="amount" datatype="require|price"></weui-input>
+				</view>
+			</view>
+			<view class="bg-f type">
+				<view class="fs-17 p15 pb5">填写银行卡信息</view>
+				<weui-input v-model="ruleform.blank_client_name" label="姓名" placeholder="请输入姓名" type="text" name="blank_client_name" datatype="require"></weui-input>
+				<weui-input v-model="ruleform.blank_name" name="blank_name" label="选择银行" changeField="value" type="select" :dataKey="'bankTypeArr'" datatype="require"></weui-input>
+				<weui-input v-model="ruleform.blank_cardno" label="银行卡号" placeholder="请输入银行卡号" type="text" name="blank_cardno" datatype="require"></weui-input>
+			</view>
+			<view class="m20">
+				<dx-button type="primary" size="lg" round btnBg="#BA9A5D" btnBd="#BA9A5D" block @click="goto('/pages/staff/withdraw/result',1)">提现</dx-button>
+			</view>
+			<view class="fs-14 fc-6 mt10 text-center">满50元可申请提现</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	import dxButton from "doxinui/components/button/button"
+	import '../../../provider.js';
+	export default {
+		components:{dxButton},
+		data() {
+			return {
+				formAction: '/staff/boss-count',
+				mpType: 'page', //用来分清父和子组件
+				data: this.formatData(this),
+				getSiteName: this.getSiteName(),
+				ruleform: {},
+				bankTypeArr: [
+					{label: '中国工商银行',value: '中国工商银行'},
+					{label: '中国建设银行',value: '中国建设银行'},
+					{label: '中国银行',value: '中国银行'},
+					{label: '招商银行',value: '招商银行'},
+					{label: '中国农业银行',value: '中国农业银行'},
+					{label: '平安银行',value: '平安银行'},
+					{label: '浦发银行',value: '浦发银行'},
+					{label: '中国光大银行',value: '中国光大银行'},
+					{label: '兴业银行',value: '兴业银行'},
+					{label: '交通银行',value: '交通银行'},
+					{label: '中国民生银行',value: '中国民生银行'},
+					{label: '中信银行',value: '中信银行'},
+					{label: '中国邮政储蓄银行',value: '中国邮政储蓄银行'},
+					{label: '农村商业银行',value: '农村商业银行'},
+					{label: '发展银行',value: '发展银行'},
+					{label: '其他银行',value: '其他银行'},
+				],
+				searchType:'today',
+				putaway0amount:0,
+				putaway1amount:0,
+			}
+		},
+		onReachBottom() {
+			this.hasMore(this);
+		},
+		onPullDownRefresh() {
+			this.data.nextPage = 1;
+			this.ajax();
+		},
+		onShareAppMessage() {
+			return this.shareSource(this, '商城');
+		},
+		onLoad(options) {
+			this.ajax();
+		},
+		onShow(){
+			console.log(123)
+			this.onShow(this);
+		},
+		methods: {
+			ajax() {
+				this.getAjax(this,{ searchType: this.searchType,online:this.online }).then(msg => {
+					console.log(this.data);
+					this.show = true;
+					this.putaway0amount = 0;
+					this.putaway1amount = 0;
+					this.data.listsNew.forEach(v=>{
+						 if(v.putaway == 0){
+							 this.putaway0amount+=parseFloat(v.order_num);
+						 }
+						 if(v.putaway == 1){
+							this.putaway1amount+=parseFloat(v.order_num);
+						 }
+					})
+					this.online1Lists = this.data.listsNew;
+					this.online0Lists = this.data.online0Lists;
+					this.$nextTick(()=>{
+						this.$refs.page.share("在线管理");
+					})
+					this.show = true;
+				});
+			}
+		}
+	}
+</script>
+<style>
+@import "./index.css";
+</style>

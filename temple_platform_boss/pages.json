@@ -15,14 +15,35 @@
 				"enablePullDownRefresh": true,
 				"navigationStyle": "custom"
 			}
+		},
+		{
+			"path": "pages/staff/withdraw/index",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/staff/withdraw/result",
+			"style": {
+				"navigationBarTitleText": "提交结果",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/staff/withdraw/lists",
+			"style": {
+				"navigationBarTitleText": "提现明细",
+				"enablePullDownRefresh": true
+			}
 		}
 		
     ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#BA9A5D",
+		"backgroundColor": "#BA9A5D"
 	},
 	"tabBar": {
 		"selectedColor": "#A98853",

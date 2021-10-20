@@ -1,34 +1,34 @@
 <template>
 	<view>
 		<page :parentData="data" :formAction="formAction"></page>
-			<div class="logo pt50 pb20">
+		<view class="bg-white"></view>
+		<view class="zIndex2">
+			<view class="logo pt50 pb20">
 				<image class="img" src="/static/logo.jpg"></image>
-			</div>
-			<div class="login-list m15" >
-				<div class="login02">
-					<view class="login-info">
-						<weui-input v-model="ruleform.username" placeholder="帐号" type="text" myclass="plr0 ptb15" name="username" datatype="require">
-							<view slot="left" class="slot-icon">
-								<view class="iconfont icon-login-phone"></view>
-							</view>
-						</weui-input>
-						<weui-input v-model="ruleform.password" placeholder="密码" type="password" myclass="plr0 ptb15" name="password" datatype="require">
-							<view slot="left" class="slot-icon">
-								<view class="iconfont icon-login-passwork"></view>
-							</view>
-						</weui-input>
-					</view>
-					<div class="login-btn mt40">
-						<myform :ruleform="ruleform" :vaildate="vaildate" @callBack="formSubmit" myclass="dx-btn dx-btn-big dx-btn-red bdr6 w-b100 fs-20"
-						 title="登录"></myform>
-					</div>
-				</div>
-			</div>
+			</view>
+			<view class="login-list m15" >
+				<view class="login-info">
+					<weui-input v-model="ruleform.username" placeholder="帐号" type="text" myclass="plr0 ptb15" name="username" datatype="require">
+						<view slot="left" class="slot-icon">
+							<view class="icon dxi-icon dxi-icon-phone"></view>
+						</view>
+					</weui-input>
+					<weui-input v-model="ruleform.password" placeholder="密码" type="password" myclass="plr0 ptb15" name="password" datatype="require">
+						<view slot="left" class="slot-icon">
+							<view class="icon dxi-icon dxi-icon-password"></view>
+						</view>
+					</weui-input>
+				</view>
+				<view class="login-btn mt40">
+					<myform :ruleform="ruleform" :vaildate="vaildate" @callBack="formSubmit" myclass="dx-btn dx-btn-big dx-btn-red bdr6 w-b100 fs-20"
+					 title="登录"></myform>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 
 <script>
-	import "./index.css";
 	export default {
 		data() {
 			return {
@@ -73,3 +73,6 @@
 		}
 	}
 </script>
+<style>
+@import "./index.css";
+</style>

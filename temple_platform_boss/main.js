@@ -71,10 +71,6 @@ Vue.use(filter);
 Vue.use(vaildate);
 
 
-
-
-
-
 uni.removeStorageSync('jsdk');
 uni.removeStorageSync('distribution');
 //uni.setStorageSync('openid', 'ohOO94sLnnf0bzJpqFqigfNxLSto');
@@ -82,9 +78,7 @@ App.mpType = 'app'
 let siteName = 'https://rxys.doxinsoft.com';
 uni.setStorageSync('siteName', siteName);
 
-import 'xiaozhu/wechatapp/css/global.css';
-import 'xiaozhu/wechatapp/css/global_upx.css';
-import 'xiaozhu/wechatapp/css/flex.css';
+import 'doxinui/css/global_upx.css';
 import 'doxinui/css/global_icon.css';
 import '@/public/weui/weui.css';
 import "@/public/font/iconfont.css";

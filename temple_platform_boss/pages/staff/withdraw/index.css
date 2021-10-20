@@ -1,0 +1,17 @@
+
+.withdraw-box{border: 2upx #ddd solid;border-radius: 12upx;padding: 20upx 30upx;display: flex;align-items: center;}
+.withdraw-box .box-label{width: 170upx;font-size: 32upx;color: #343434;line-height: 60upx;}
+.withdraw-box ::v-deep .dx-cell::after{display: none;}
+.withdraw-box ::v-deep .dx-cell{padding: 0;flex: 1;}
+.withdraw-box ::v-deep .uni-input-placeholder,.withdraw-box ::v-deep .dx-input{font-size: 32upx;}
+
+
+/* 充值 */
+.withdraw-price{display: flex;flex-wrap: wrap;}
+.withdraw-price .selectAmount{width:calc(33.33% - 10px);margin: 5px;border: 1px #e1e1e1 solid;border-radius: 4px;padding: 10px 0;text-align: center;}
+.withdraw-price .selectAmount .num{text-align: center;font-size: 18px;color: #57C734;}
+.withdraw-price .selectAmount.select{background: #57C734;border-color: #57C734;}
+
+
+.type ::v-deep .dx-cell,.type ::v-deep .dx-input{font-size: 32rpx!important;}
+.type ::v-deep .picker{text-align: left!important;}

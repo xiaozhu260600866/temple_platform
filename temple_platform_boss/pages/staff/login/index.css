@@ -1,19 +1,16 @@
-page{background: #fff;}
+.bg-white{position: fixed;background: #fff;top: 0;left: 0;right: 0;bottom: 0;z-index: 1;}
+.zIndex2{position: relative;z-index: 2;}
+
 
 .logo{display: flex;justify-content: center;}
 .logo .img{width: 180rpx;height: 180rpx;border-radius: 20rpx;display: flex;}
 
-.type{display: flex;justify-content: center;}
-.type .type-name{padding: 5px 15px;}
-.type .cur{font-weight: bold;position: relative;}
-.type .cur:before{content: "";display: block;position: absolute;bottom: 0;left: 50%;width: 30px;height: 3px;background: #33c45d;margin-left: -15px;}
 
 .login-list{padding: 30rpx 30rpx 0;}
 
-/* 信息填写 */
-.login-info .dx-cell:after{background-color: #ddd;left: 0;}
-.login-info .slot-icon .iconfont{font-size: 36rpx;color: #666;padding-right: 30rpx;}
-.login-info .dx-input{font-size: 36rpx!important;}
-.login-info .login-pla{font-size: 34rpx!important;}
 
-.mark{position: fixed;bottom: 60rpx;width: 100%;padding: 0 60rpx;left: 0;line-height: 1.8;text-align: center;}
+/* 信息填写 */
+.login-info ::v-deep .dx-cell:after{background-color: #ddd;left: 0;}
+.login-info .slot-icon .icon{font-size: 36rpx;color: #888;padding-right: 30rpx;}
+.login-info ::v-deep .dx-input{font-size: 36rpx!important;}
+.login-info .login-pla{font-size: 34rpx!important;}

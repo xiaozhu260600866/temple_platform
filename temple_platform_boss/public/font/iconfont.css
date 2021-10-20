@@ -29,16 +29,8 @@
 .icon-luckBag-fill:before{content: "\e641";}/* 福袋 */
 
 
-.icon-user-record:before{content: "\e60e";color: #A98853;}/* 我的功德 */
-.icon-user-tablet:before{content: "\f228";color: #A98853;}/* 我的牌位 */
-.icon-user-coupon:before{content: "\a610";color: #A98853;}/* 我的餐券 */
-.icon-user-shop:before{content: "\e604";color: #A98853;}/* 我的餐券 */
-.icon-user-appointment:before{content: "\e603";color: #A98853;}/* 我的预约 */
-.icon-user-service:before{content: "\e63f";color: #A98853;}/* 客堂电话 */
-.icon-user-phone:before{content: "\e61f";color: #A98853;}/* 客堂手机 */
-.icon-user-location:before{content: "\f6a2";color: #A98853;}/* 一键导航 */
-.icon-user-share:before{content: "\e6c0";color: #A98853;}/* 我的分享 */
-.icon-user-room:before{content: "\e610";color: #A98853;}/* 我的分享 */
+.icon-login-phone:before{content: "\e62c";}/* 我的分享 */
+.icon-login-passwork:before{content: "\e62c";}/* 我的分享 */
 
 
 .icon-dis-share:before{content: "\e62c";}/* 我的分享 */
