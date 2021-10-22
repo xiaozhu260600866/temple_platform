@@ -181,6 +181,7 @@
 				this.getAjax(this).then(msg => {
 					this.setTitle(msg.detail.name);
 					this.$refs.page.share(msg.detail.name,msg.detail.firstCover,this.data.siteConfig.share_descript);
+					uni.setStorageSync('site_name', msg.detail.site_name);	
 				});
 			}
 		}
