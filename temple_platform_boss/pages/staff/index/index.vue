@@ -4,7 +4,7 @@
 		<view class="" v-if="data.user">
 			<view class="dis-header main-bg">
 				<view class="head-img">
-					<img class="img" :src="data.user.hederPic">
+					<img class="img" :src="data.user.headerPic">
 				</view>
 				<view class="dis-info fc-white">
 					<view class="name fs-18">{{ data.user.userInfo.company_name}}</view>
