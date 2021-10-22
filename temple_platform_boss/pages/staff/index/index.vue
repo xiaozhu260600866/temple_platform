@@ -16,19 +16,19 @@
 			</view>
 			<view class="sup-sec">
 				<view class="sec-group" @click="goto('/pages/staff/count/index',1)">
-					<view class="icon_img"><image class="img" :src="getSiteName+'/images/wap/wap-user01.png'"></image></view>
+					<view class="icon_img"><image class="img" :src="getSiteName+'/images/wap/wap-index01.png'"></image></view>
 					<view class="name">随喜收益</view>
 				</view>
 				<view class="sec-group" @click="goto('/pages/staff/withdraw/index',1)">
-					<view class="icon_img"><image class="img" :src="getSiteName+'/images/wap/wap-user09.png'"></image></view>
+					<view class="icon_img"><image class="img" :src="getSiteName+'/images/wap/wap-index02.png'"></image></view>
 					<view class="name">一键提现</view>
 				</view>
 				<view class="sec-group" @click="goto('/pages/staff/withdraw/lists',1)">
-					<view class="icon_img"><image class="img" :src="getSiteName+'/images/wap/wap-user10.jpg'"></image></view>
+					<view class="icon_img"><image class="img" :src="getSiteName+'/images/wap/wap-index03.png'"></image></view>
 					<view class="name">提现明细</view>
 				</view>
 				<view class="sec-group" @click="goto('/pages/staff/info/index',1)">
-					<view class="icon_img"><image class="img" :src="getSiteName+'/images/wap/wap-user11.jpg'"></image></view>
+					<view class="icon_img"><image class="img" :src="getSiteName+'/images/wap/wap-index04.png'"></image></view>
 					<view class="name">基本资料</view>
 				</view>
 			</view>
