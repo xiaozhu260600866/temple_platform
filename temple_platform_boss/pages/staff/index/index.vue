@@ -35,20 +35,20 @@
 			<view class="sup-account bg-f pt12 mb12">
 				<view class="name fs-14 fc-7 text-center">总收益（已到账收益+未到账收益）</view>
 				<view class="flex-center flex-middle" @click="goto('/pages/staff/count/index',1)">
-					<view class="price fs-16">￥<span class="fs-30">{{putaway1amount.toFixed(2)}}</span></view>
+					<view class="price fs-16">￥<span class="fs-30">{{data.price_all}}</span></view>
 				</view>
 				<view class="ac-group">
 					<view class="ac-row">
 						<view class="label">可提现收益</view>
-						<view class="value">￥<span>{{data.price_a}}</span></view>
+						<view class="value">￥<span>{{data.price}}</span></view>
 					</view>
 					<view class="ac-row">
 						<view class="label">已成功提现金额</view>
-						<view class="value">￥<span>{{data.data.outSumEd}}</span></view>
+						<view class="value">￥<span>{{data.price_out}}</span></view>
 					</view>
 					<view class="ac-row">
 						<view class="label">提现审核中</view>
-						<view class="value">￥<span>{{data.data.outSumIng}}</span></view>
+						<view class="value">￥<span>{{data.price_outing}}</span></view>
 					</view>
 				</view>
 			</view>
@@ -61,7 +61,7 @@
 		components:{searchType},
 		data() {
 			return {
-				formAction: '/staff/boss-count',
+				formAction: '/staff/do-money',
 				mpType: 'page', //用来分清父和子组件
 				data: this.formatData(this),
 				getSiteName: this.getSiteName(),
