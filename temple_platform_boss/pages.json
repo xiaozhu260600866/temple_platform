@@ -3,7 +3,7 @@
 		{
 			"path": "pages/staff/index/index",
 			"style": {
-				"navigationBarTitleText": "数据统计",
+				"navigationBarTitleText": "后台登录",
 				"enablePullDownRefresh": true,
 				"navigationStyle": "custom"
 			}
@@ -11,7 +11,15 @@
 		{
 			"path": "pages/staff/login/main",
 			"style": {
-				"navigationBarTitleText": "数据统计",
+				"navigationBarTitleText": "后台登录",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/staff/count/index",
+			"style": {
+				"navigationBarTitleText": "随喜收益",
 				"enablePullDownRefresh": true,
 				"navigationStyle": "custom"
 			}
@@ -34,6 +42,13 @@
 			"path": "pages/staff/withdraw/lists",
 			"style": {
 				"navigationBarTitleText": "提现明细",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/staff/info/index",
+			"style": {
+				"navigationBarTitleText": "基本信息",
 				"enablePullDownRefresh": true
 			}
 		}

@@ -31,6 +31,8 @@ body {font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans
 /* 橙色 warning*/
 .dxi-btn-warning {background-color:#ff721f!important;border-color:#ff721f!important;}
 .dxi-btn-warning:focus,.dxi-btn-warning:hover {background:#ff933f!important;border-color:#ff933f!important;}
+.dxi-btn-primary {background-color:#A98853!important;border-color:#A98853!important;}
+.dxi-btn-primary:focus,.dxi-btn-primary:hover {background:#A98853!important;border-color:#A98853!important;}
 
 
 /* --覆盖层-- */

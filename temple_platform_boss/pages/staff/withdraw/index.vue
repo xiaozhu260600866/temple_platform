@@ -3,7 +3,7 @@
 		<page :parentData="data" :formAction="formAction"></page>
 		<view v-if="data.show">
 			<view class="withdraw p15 bg-f mb12">
-				<view class="fs-15 fc-6 mb10">可提现金额<text class="Arial plr5">{{data.price.toFixed(2)}}</text>元</view>
+				<view class="fs-17 fc-3 mb10">账户余额<text class="Arial plr5">{{data.price.toFixed(2)}}</text>元</view>
 				<view class="withdraw-box">
 					<view class="box-label">提现金额</view>
 					<weui-input v-model="ruleform.amount" myclass="input" errorMessage="提现金额" placeholder="请输入提现金额" type="text" name="amount" datatype="require|price"></weui-input>

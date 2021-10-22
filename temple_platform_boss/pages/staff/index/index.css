@@ -1,27 +1,18 @@
-
-.stuff-sec{}
-.stuff-sec .sec-group{width: 100%;box-sizing: border-box;text-align: center;padding: 48rpx 0;}
-.stuff-sec .sec-group:nth-child(2n){border-right: none;}
-.stuff-sec .sec-group .img{width: 80rpx;height: 80rpx;margin-bottom: 20rpx;}
-.stuff-sec .sec-group .p {font-size: 30rpx;color: #777;line-height: 36rpx;}
-.stuff-sec .sec-group .num{font-family: Arial;font-size: 38rpx;color: #415161;line-height: 44rpx;margin-top: 16rpx;}
-.stuff-sec .sec-group .num .unit{font-size: 26rpx;color: #999;}
+.dis-header {position: relative;padding: 50upx 30upx;background-color: #33c45d;display: flex;align-items: center;}
+.dis-header .head-img .img{width: 120upx;height: 120upx;border-radius: 50%;border: 8upx solid rgba(255,255,255,0.5);margin-right: 30upx;}
+.dis-header .dis-info{flex: 1;line-height: 1;}
 
 
-.account_nav{display: flex;}
-.account_nav .nav{border: 1rpx #f2f2f2 solid;flex: 1;text-align: center;margin-right: -1px;font-size: 32rpx;line-height: 1.6;padding: 16rpx 0 6rpx;}
-.account_nav .nav .txt{font-size: 30rpx;}
-.account_nav .cur{border-bottom-color: #E41F19;color: #E41F19;border-bottom-width: 3px;}
+.sup-sec {display: flex;flex-wrap: wrap;padding: 20upx;background-color: #fff;margin-bottom: 24upx;}
+.sup-sec .sec-group{width: 25%;text-align: center;padding: 20upx 0;}
+.sup-sec .sec-group .icon{background: #999;width: 92upx;height: 92upx;text-align: center;line-height: 92upx;border-radius: 50%;margin: 0 auto;}
+.sup-sec .sec-group .icon_img .img{width: 92upx;height: 92upx;border-radius: 50%;display: flex;margin: 0 auto;}
+.sup-sec .sec-group .name{font-size: 30upx;color: #353535;margin-top: 16upx;line-height: 48rpx;}
 
 
 /* 统计 */
-.ac-group .ac-row{display: flex;justify-content: space-between;align-items: center;padding: 24rpx 30rpx;border-bottom: 2rpx #f2f2f2 solid;}
-.ac-group .ac-row .label{font-size: 32rpx;color: #666;line-height: 48rpx;flex: 1;padding-right: 30rpx;}
-.ac-group .ac-row .value{font-size: 34rpx;color: #415161;line-height: 48rpx;height: 48rpx;}
-.ac-group .ac-row .ellipsis{color: #999;line-height: 48rpx;}
-
-
-/* 按钮组 */
-.ac-nav{padding: 40rpx 30rpx;display: flex;align-items: center;}
-.ac-nav .nav{width: 100%;text-align: center;line-height: 80rpx;border-radius: 80rpx;background-color:#409eff;color: #fff;font-size: 30rpx;margin: 0 10rpx;border: 1rpx #409eff solid;}
-.ac-nav .nav.onav{background-color: #fff;border-color: #bbb;color: #666;}
+.ac-group .ac-row{display: flex;justify-content: space-between;align-items: center;padding: 24upx 30upx;border-bottom: 2upx #f2f2f2 solid;}
+.ac-group .ac-row .label{font-size: 30upx;color: #999;line-height: 48upx;}
+.ac-group .ac-row .value{font-size: 32upx;color: #999;line-height: 48upx;height: 48upx;}
+.ac-group .ac-row .value span{font-size: 48upx;}
+.ac-group .ac-row .ellipsis{color: #999;line-height: 48upx;}
