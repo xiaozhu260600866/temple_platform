@@ -874,6 +874,17 @@ export default new Router({
 							component: resolve => require(['../pages/role/merchant_lists'], resolve),
 							permission: []
 						},
+						{
+							path: 'comeOut*',
+							url: '/vueadmin/merchant/comeOut?status=0',
+							name: '提现',
+							meta: {
+							   keepAlive: false // 需要被缓存
+							},
+							iconCls: 'iconfont icon8', //图标样式class
+							component: resolve => require(['../pages/merchant/come_out_lists'], resolve),
+							permission: []
+						},
 				
 					]
 				},
