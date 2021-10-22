@@ -1,9 +1,9 @@
 <template>
 	<view>
 		<page :parentData="data" :formAction="formAction"></page>
-		<view v-if="data.user">
+		<view v-if="data.show">
 			<view class="withdraw p15 bg-f mb12">
-				<view class="fs-15 fc-6 mb10">可提现金额<text class="Arial plr5">{{putaway1amount.toFixed(2)}}</text>元</view>
+				<view class="fs-15 fc-6 mb10">可提现金额<text class="Arial plr5">{{data.price.toFixed(2)}}</text>元</view>
 				<view class="withdraw-box">
 					<view class="box-label">提现金额</view>
 					<weui-input v-model="ruleform.amount" myclass="input" errorMessage="提现金额" placeholder="请输入提现金额" type="text" name="amount" datatype="require|price"></weui-input>
@@ -30,7 +30,7 @@
 		components:{dxButton},
 		data() {
 			return {
-				formAction: '/staff/boss-count',
+				formAction: '/staff/do-money',
 				mpType: 'page', //用来分清父和子组件
 				data: this.formatData(this),
 				getSiteName: this.getSiteName(),
@@ -84,32 +84,20 @@
 							if(this.ruleform.amount <50){
 								return this.getError("必须要大于50元才能够提现");
 							}
-							return this.goto('/pages/staff/withdraw/result',1)
+							this.postAjax(this.formAction,this.ruleform).then(msg=>{
+								if(msg.data.status == 2){
+									return this.goto('/pages/staff/withdraw/result',1)
+								}
+							})
+							
 						}
 					})
 				},100);
 				
 			},
 			ajax() {
-				this.getAjax(this,{ searchType: this.searchType,online:this.online }).then(msg => {
-					console.log(this.data);
-					this.show = true;
-					this.putaway0amount = 0;
-					this.putaway1amount = 0;
-					this.data.listsNew.forEach(v=>{
-						 if(v.putaway == 0){
-							 this.putaway0amount+=parseFloat(v.order_num);
-						 }
-						 if(v.putaway == 1){
-							this.putaway1amount+=parseFloat(v.order_num);
-						 }
-					})
-					this.online1Lists = this.data.listsNew;
-					this.online0Lists = this.data.online0Lists;
-					this.$nextTick(()=>{
-						this.$refs.page.share("在线管理");
-					})
-					this.show = true;
+				this.getAjax(this,{  }).then(msg => {
+					
 				});
 			}
 		}

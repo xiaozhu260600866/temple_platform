@@ -1,8 +1,8 @@
 <template>
 	<view>
 		<page :parentData="data" :formAction="formAction"></page>
-		<view>
-			<!-- <view class="brecord-list bg-f p10 mb10 flex-between lh-26" v-for="item in lists">
+		<view v-if="data.show">
+			<view class="brecord-list bg-f p10 mb10 flex-between lh-26" v-for="item in data.lists.data">
 				<view class="group fs-16">
 					<view>提现</view>
 					<view class="Arial fc-red">-{{item.amount}}</view>
@@ -11,8 +11,8 @@
 					<view class="Arial">{{item.created_at}}</view>
 					<view>{{item.getStatus}}</view>
 				</view>
-			</view> -->
-			<view class="p50 text-center fs-15 fc-9">暂无提现记录</view>
+			</view>
+			<hasMore :parentData="data"></hasMore>
 		</view>
 	</view>
 </template>
@@ -21,7 +21,7 @@
 	export default {
 		data() {
 			return {
-				formAction: '/shop/product/class',
+				formAction: '/staff/come-out-lists',
 				mpType: 'page', //用来分清父和子组件
 				data: this.formatData(this),
 				getSiteName: this.getSiteName(),
@@ -41,7 +41,7 @@
 			return this.shareSource(this, '商城');
 		},
 		onLoad(options) {
-			//this.ajax();
+			this.ajax();
 		},
 		onShow(){
 			console.log(123)
