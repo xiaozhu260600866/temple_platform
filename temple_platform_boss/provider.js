@@ -3,7 +3,7 @@
 let siteName = uni.getStorageSync('siteName');
 
 let site_name = uni.getStorageSync('siteName');
-let gotoWechat = uni.getStorageSync("gotoWechat182");
+let gotoWechat = uni.getStorageSync("gotoWechat183");
 let userInfo = uni.getStorageSync('userInfo');
 
 if(getOptions("site_name")){
@@ -68,7 +68,7 @@ if (!gotoWechat) {
 	//alert(url);
 	let newUrl_ = url.replace("/?from=singlemessage#", "");
 	console.log(newUrl_);
-	uni.setStorageSync("gotoWechat182", 1);
+	uni.setStorageSync("gotoWechat183", 1);
 	window.location.href = newUrl_;
 }
 

@@ -57,6 +57,7 @@
 </template>
 <script>
 	import searchType from '@/components/searchType'
+		import '../../../provider.js';
 	export default {
 		components:{searchType},
 		data() {
