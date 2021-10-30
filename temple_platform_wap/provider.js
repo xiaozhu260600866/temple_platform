@@ -3,7 +3,7 @@ let siteName = 'https://rxys.doxinsoft.com';
 uni.setStorageSync('siteName', siteName);
 
 let site_name = uni.getStorageSync('siteName');
-let gotoWechat = uni.getStorageSync("gotoWechat183");
+let gotoWechat = uni.getStorageSync("gotoWechat199");
 let userInfo = uni.getStorageSync('userInfo');
 
 if(getOptions("site_name")){
@@ -68,7 +68,7 @@ if (!gotoWechat) {
 	//alert(url);
 	let newUrl_ = url.replace("/?from=singlemessage#", "");
 	console.log(newUrl_);
-	uni.setStorageSync("gotoWechat183", 1);
+	uni.setStorageSync("gotoWechat199", 1);
 	window.location.href = newUrl_;
 }
 
