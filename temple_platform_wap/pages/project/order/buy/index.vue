@@ -3,21 +3,21 @@
 		<page :parentData="data" :formAction="formAction" ref="page"></page>
 		<view class="pay detail" v-if="data.show">
 			<view class="pay-price box-item fs-15">
-				<view class="Btitle plr15 pt10">
-					<view class="name fs-16 lh-30">选择随喜金额</view>
+				<view class="Btitle">
+					<view class="name">选择随喜金额</view>
 				</view>
-				<view class="flex flex-wrap p5 pb0">
+				<view class="row">
 					<view :class="['item',ruleform.amount == v  ? 'select' :'' ]" v-for="v in amountArr" v-if="v">
 						<!-- <view :class="['price',ruleform.amount == v ? 'fc-white': '']" @click="ruleform.amount  = v" v-if="v == 100">{{ v }}元小金钥匙 </view>
 						<view :class="['price',ruleform.amount == v ? 'fc-white': '']" @click="ruleform.amount  = v" v-if="v == 600">{{ v }}元大金钥匙 </view> -->
 						<view :class="['price',ruleform.amount == v ? 'fc-white': '']" @click="ruleform.amount  = v">{{ v }} </view>
 					</view>
 				</view>
-				<view class="flex p5 pt0">
-					<view :class="['item','other',ruleform.amount == 0 ? 'select' :'' ]" @click="ruleform.amount = 0" v-if="ruleform.show_other_price">
-						<view :class="['pl8',,ruleform.amount == 0 ? 'fc-orange':'fc-9']">其他</view>
-						<input class="w-b100 flex1 text-left plr15" type="number" maxlength="7" max="3000" v-model="ruleform.otheramount">
-						<view :class="['pr8',,ruleform.amount == 0 ? 'fc-orange':'fc-9']">元</view>
+				<view class="row">
+					<view :class="['item other',ruleform.amount == 0 ? 'select' :'' ]" @click="ruleform.amount = 0" v-if="ruleform.show_other_price">
+						<view class="txt">其他</view>
+						<input class="input" type="number" maxlength="7" v-model="ruleform.otheramount">
+						<view class="txt">元</view>
 					</view>
 				<!-- 	<view class="anonymous flex-middle ml15 mr5">
 						<view :class="['select', open ? 'yes' : '']" @click="open = !open"></view>
@@ -29,8 +29,8 @@
 				</view> -->
 			</view>
 			<view class="box-item people-info">
-				<view class="Btitle plr15 pt10">
-					<view class="name fs-16 lh-30">功德主资料 </view>
+				<view class="Btitle">
+					<view class="name">功德主资料 </view>
 				</view>
 				<!-- <weui-input v-model="ruleform.name" label="登记人姓名" type="text" name="name" datatype="require" v-if="!open"></weui-input> -->
 				<weui-input v-model="ruleform.bless_name" label="功德主姓名" type="text" name="bless_name" datatype="require" :maxlength="6"></weui-input>
@@ -43,20 +43,17 @@
 				<weui-input v-model="ruleform.post_address" type="text" name="post_address" label="邮寄地址"  datatype="require"
 				 v-if="ruleform.can_post && ruleform.is_post  ==1"></weui-input>
 			</view>
-			<view class="box-item content">
-				<view class="Btitle plr15 pt10">
-					<view class="name fs-16 lh-30">回向文</view>
+			<view class="box-item">
+				<view class="Btitle">
+					<view class="name">回向文</view>
 				</view>
-				<!-- <weui-input v-model="ruleform.evaluate" type="textarea" name="remark"></weui-input> -->
-				<view class="plr15 ptb8">
-					<textarea style="height: 100px;" @click="ruleform.evaluate = ''" class="remark" name="remarks" id="remarks" title="请输入您的回向文"
-					 placeholder="输入您的回向文，可先小回向(若有)，再大回向" cols="" rows="" v-model="ruleform.evaluate"></textarea>
+				<view class="content">
+					<textarea @click="ruleform.evaluate = ''" class="remark" name="remarks" id="remarks" title="请输入您的回向文"
+					 placeholder="输入您的回向文，可先小回向(若有)，再大回向" v-model="ruleform.evaluate"></textarea>
 				</view>
 			</view>
-
-
-			<view class="m20">
-				<view class="dx-btn dx-btn-lg dx-btn-orange w-b100" @click="formSubmit">微信支付随喜</view>
+			<view class="p20 pb30">
+				<dx-button type="primary" size="lg" block round @click="formSubmit">微信支付随喜</dx-button>
 			</view>
 		</view>
 	</div>

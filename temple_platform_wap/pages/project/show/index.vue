@@ -51,11 +51,11 @@
 			
 			<view class="content pb50 bg-f mt10">
 				<view class="box">
+					<view class="tt flex">
+						<view class="name" @click="showType =0" :class="[showType == 0 ? 'hover' : '']">详情</view>
+						<view class="name" @click="showType = 1" :class="[showType == 1 ? 'hover' : '']">留言(<text class="num fc-red">{{data.orderCount}}</text>)</view>
+					</view>
 					<view class="desc">
-						<view class="tt flex">
-							<span id="two1" @click="showType =0" :class="[showType == 0 ? 'hover' : '']">详情</span>
-							<span id="two3" @click="showType = 1" :class="[showType == 1 ? 'hover' : '']" style="width:auto;">留言（<b style="color:red;font-size:16px;">{{data.orderCount}}</b>）</span>
-						</view>
 						<!-- 详情 -->
 						<view v-if="showType == 0" class="p10 con-detail">
 							<u-parse :content="data.detail.content" />
@@ -83,31 +83,36 @@
 					</view>
 				</view>
 			</view>
-			<view id="footer-btn" class="p0 bd-te">
-				<view class="Bitem text-center" @click="goto('/pages/index/index',2)">
-					<view class="lh-28 h-28">
-						<i class="iconfont icon-home fs-20"></i>
+			<view id="footer-btn" class="p0">
+				<view class="Bleft">
+					<view class="Bitem Bitem-60" @click="goto('/pages/index/index',2)">
+						<view class="ticon">
+							<text class="icon dxi-icon dxi-icon-home4"></text>
+						</view>
+						<view class="bname">首页</view>
 					</view>
-					<view class="fs-12 lh-18">首页</view>
-				</view>
-				<view class="Bitem text-center" @click="phone(data.siteConfig.phone)">
-					<view class="lh-28 h-28">
-						<i class="iconfont icon-service fs-20"></i>
-					</view>
-					<view class="fs-12 lh-18">客堂电话</view>
-				</view>
-				<view class="flex1 pr10 ptb5 ml10" v-if="data.detail.fclass == 34">
-					<view class="f-dx-btn dx-btn-orange text-center" @click="goto('/pages/project/order/buy/index2?project_id='+data.detail.id,1)">
-						<text class="iconfont icon-like-circle fc-white fs-18 pr5"></text>我要随喜
+					<view class="Bitem Bitem-60" @click="phone(data.siteConfig.phone)">
+						<view class="ticon">
+							<text class="icon dxi-icon dxi-icon-tel2"></text>
+						</view>
+						<view class="bname">客堂电话</view>
 					</view>
 				</view>
-				<view class="flex1 pr10 ptb5 ml10" v-else>
-					<view class="f-dx-btn dx-btn-orange text-center" @click="goto('/pages/project/order/buy/index?project_id='+data.detail.id,1)">
-						<text class="iconfont icon-like-circle fc-white fs-18 pr5"></text>我要随喜
-					</view>
+				<view class="Bright">
+					<block v-if="data.detail.fclass == 34">
+						<dx-button type="primary" block round @click="goto('/pages/project/order/buy/index2?project_id='+data.detail.id,1)">
+							<text class="iconfont icon-like-circle fc-white fs-18 pr5"></text>
+							<text class="txt">我要随喜</text>
+						</dx-button>
+					</block>
+					<block v-else>
+						<dx-button type="primary" block round @click="goto('/pages/project/order/buy/index?project_id='+data.detail.id,1)">
+							<text class="iconfont icon-like-circle fc-white fs-18 pr5"></text>
+							<text class="txt">我要随喜</text>
+						</dx-button>
+					</block>
 				</view>
 			</view>
-			<view class="btn"></view>
 		</view>
 	</view>
 </template>

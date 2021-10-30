@@ -2,7 +2,7 @@
 	<view>
 		<page :parentData="data" :formAction="formAction" ref="page"></page>
 		<view v-if="data.show" class="home">
-			<view class="Irecord">
+			<!-- <view class="Irecord">
 				<view class="item flex-between flex-middle plr15 ptb8">
 					<view class="lh-30 fs-18 fw-bold">{{data.siteConfig.web_name}}</view>
 					<view class="flex">
@@ -10,7 +10,7 @@
 						<view class="name">份随喜</view>
 					</view>
 				</view>
-			</view>
+			</view> -->
 			<view class="banner">
 				<myswiper :lists="data.silders.data"></myswiper>
 			</view>
@@ -97,9 +97,9 @@
 				</view>
 				<shopProductLists :lists="data.productLists"></shopProductLists>
 			</view>
-			<view class="footer">
-				<span class="fs-15">© {{dateYear}} {{data.siteConfig.web_name}}</span>
-				<!-- <view class="text-center fc-9 fs-12" @click="phone('13318639080')">技术支持：东信科技</view> -->
+			<view class="ptb30 text-center fc-9 fs-14">
+				<text class="fs-15 Arial pr5">© {{dateYear}}</text>
+				<text class="name">{{data.siteConfig.web_name}}</text>
 			</view>
 		</view>
 	</view>

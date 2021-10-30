@@ -28,9 +28,16 @@ body {font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans
 .main-btn{border-color: #A98853!important;background: #A98853!important;}
 .main-btn-o{color: #A98853!important;border-color: #A98853!important;}
 
+
 /* 橙色 warning*/
 .dxi-btn-warning {background-color:#ff721f!important;border-color:#ff721f!important;}
 .dxi-btn-warning:focus,.dxi-btn-warning:hover {background:#ff933f!important;border-color:#ff933f!important;}
+
+
+/* 红色 */
+.dxi-btn-primary {color: #fff;background-color: #FF3F4C!important;border-color: #FF3F4C!important;}
+.dxi-btn-primary:focus,.dxi-btn-primary:hover {background: #FF3F4C!important;border-color: #FF3F4C!important;color:#fff}
+.dxi-btn-primary:active {outline: none}
 
 
 /* --覆盖层-- */
@@ -43,11 +50,15 @@ body {font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans
 
 
 /* 按钮 */
-#footer-btn{position: fixed;bottom: 0;left: 0;height: 108rpx;display: flex;box-shadow: none;padding: 10rpx 20rpx;width: 100%;box-sizing: border-box;background: #fff;z-index: 10;align-items: center;}
+#footer-btn{position: fixed;bottom: 0;left: 0;display: flex;box-shadow: none;padding: 10rpx 20rpx;width: 100%;box-sizing: border-box;background: #fff;z-index: 10;align-items: center;border-top: 1rpx #f5f5f5 solid;min-height: 100rpx;}
 #footer-btn myform{width: 100%;}
+#footer-btn .Bleft{display: flex;padding: 8rpx 0;}
+#footer-btn .Bitem{text-align: center;width: 100rpx;}
+#footer-btn .Bitem-60{width: 120rpx;}
 #footer-btn .ticon{height: 60rpx;line-height: 60rpx;}
-#footer-btn .ticon i{font-size: 44rpx;}
+#footer-btn .ticon .icon,#footer-btn .ticon i{font-size: 44rpx;}
 #footer-btn .bname{font-size: 26rpx;line-height: 40rpx;}
+#footer-btn .Bright{display: flex;align-items: center;flex: 1;padding: 0 20rpx;}
 #footer-btn .f-dx-btn{line-height: 88rpx!important;height: 88rpx!important;font-size: 34rpx!important;text-align: center;}
 .dx-btn-red-gradual{background-image: linear-gradient(to right,#fd4442,#ee0a25);color: #fff;}
 
