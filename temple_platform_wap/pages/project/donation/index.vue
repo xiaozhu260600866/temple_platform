@@ -3,7 +3,7 @@
 		<page :parentData="data" :formAction="formAction" ref="page"></page>
 		<view v-if="data.show">
 			<view class="donation-list lh-24 ptb10 bd-be plr15" v-for="v in data.lists.data" v-if="v.projects">
-				<view class="name fs-16">{{v.bless_name}}：{{v.projects.name}}供养{{getAmount(v.amount)}}份。</view>
+				<view class="name fs-16">{{formatName(v.bless_name)}}：{{v.projects.name}}供养{{getAmount(v.amount)}}份。</view>
 			</view>
 			<hasMore :parentData="data"></hasMore>
 		</view>
