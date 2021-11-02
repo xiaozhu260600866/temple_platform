@@ -12,3 +12,6 @@
 
 
 .itemLists /deep/.cell-left .iconfont{width: 60upx;text-align: center;display: inline-block;}
+
+
+.top-sec{margin-top: -80rpx;z-index: 3;position: relative;}

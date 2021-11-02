@@ -63,6 +63,12 @@ Vue.component(
 	'floatBtn',
 	floatBtn
 );
+
+import dxButton from "doxinui/components/button/button"　
+Vue.component(
+	'dxButton',
+	dxButton
+);
 Vue.config.productionTip = false
 Vue.use(myfun);
 Vue.use(ajax);

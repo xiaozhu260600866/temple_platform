@@ -4,7 +4,7 @@
 		<div v-if="data.show">
 			<div class="Uhead-info bg-f">
 				<div class="Uhead-bg">
-					<image class="img" :src="getSiteName +'/images/wap/user-bg2.jpg'" mode="aspectFill" />
+					<image class="img" src="/static/mine-bg.png" mode="aspectFill" />
 				</div>
 				<div class="Utop plr20">
 					<div class="Uinfo">
@@ -18,21 +18,11 @@
 					</div>
 				</div>
 			</div>
-			<view class="head-count block-sec">
-				<view class="c-item">
-					<view class="name">随喜善款</view>
-					<view class="num">{{data.orderSum}}</view>
-				</view>
-				<!-- <view class="c-item" @click="goto('/pages/user/distribution/index/index',1)">
-					<view class="name">我的莲花</view>
-					<view class="num">{{data.user.integral}}</view>
-				</view> -->
-			</view>
-			<view class="block-sec">
+			<view class="block-sec top-sec">
 				<dx-nav-class :data="[
 					{url:'/pages/user/order/project',type: 1,icon:'iconfont icon-user-record',name:'我的功德'},
 					//{url:'/pages/user/order/tablet',type: 1,icon:'iconfont icon-user-tablet',name:'我的牌位'},
-					{url:'/pages/user/order/shop?status=3',type: 1,icon:'dxi-icon dxi-icon-order',name:'商城订单'},
+					{url:'/pages/user/order/shop?status=3',type: 1,icon:'dxi-icon dxi-icon-order',name:'法物流通订单'},
 					//{url:'/pages/user/order/room',type: 1,icon:'iconfont icon-user-room',name:'我的客房'},
 					//{url:'/pages/user/distribution/index/index',type: 1,cover:'http://temple.doxinsoft.com/images/wap/wap-user04.png',name:'我的分享'},
 					//{url:'',type: 1,cover:'http://temple.doxinsoft.com/images/wap/wap-user06.png',name:'一键导航'},
