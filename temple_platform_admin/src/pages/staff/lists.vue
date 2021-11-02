@@ -33,6 +33,11 @@
 			<el-table-column label="日期" width="170">
 				<template scope="scope">{{ scope.row.created_at }}</template>
 			</el-table-column>
+			<el-table-column align="center" label="信息提醒" width="65">
+				<template scope="scope">
+					 <el-switch v-model="scope.row.send_message " on-text="" off-text="" :active-value="1" :inactive-value="0" @change="editField(scope.row,'send_message')"> </el-switch>
+				</template>
+			</el-table-column>
 			<el-table-column label="操作" width="320">
 				<template scope="scope">
 					<el-button type="default" size="mini" @click="scope.row.user.userInfo.fclass =scope.row.user.fclass;scope.row.user.userInfo.role_id =scope.row.user.role_id;scope.row.user.userInfo.username =scope.row.user.username;scope.row.user.userInfo.see =scope.row.user.see;scope.row.user.userInfo.userid =scope.row.user.weixin_userid;$refs.createEdit.ajax(scope.row.user.userInfo,data.merchantLists,data.department,data.productClass,data.roleArr)">编辑</el-button>
