@@ -76,6 +76,30 @@ export default {
 		    "append_table_": 0,
 		    "label": "电话"
 		},
+		{
+		    "name": "",
+		    "prop": "orderSum1",
+		    "minWidth": "180",
+		    "width": "",
+		    "append_table_": 0,
+		    "label": "随喜总数"
+		},
+		{
+		    "name": "",
+		    "prop": "outed",
+		    "minWidth": "180",
+		    "width": "",
+		    "append_table_": 0,
+		    "label": "已提现"
+		},
+		{
+		    "name": "",
+		    "prop": "amount",
+		    "minWidth": "180",
+		    "width": "",
+		    "append_table_": 0,
+		    "label": "余额"
+		},
 		
        /* {
             "name": "",
