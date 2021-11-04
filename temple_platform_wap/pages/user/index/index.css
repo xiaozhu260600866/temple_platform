@@ -4,11 +4,11 @@
 
 
 /* 用户信息 */
-.Utop{position: absolute;width: 100%;top: 30px;left: 0;}
-.Utop .Uinfo{position: relative;display: flex;align-items: center;}
-.Utop .Uinfo .header-img{margin-right: 15px;}
-.Utop .Uinfo .header-img .img{width: 80px;height: 80px;border-radius: 50%;display: flex;margin: 0 auto;border: 3px rgba(255,255,255,0.15) solid;}
-.Utop .Uinfo .info{flex: 1;overflow: hidden;}
+.Utop{position: absolute;width: 100%;top: 30px;left: 0;display: flex;align-items: center;}
+.Utop .header-img{margin-right: 15px;}
+.Utop .header-img .img{width: 80px;height: 80px;border-radius: 50%;display: flex;margin: 0 auto;border: 3px rgba(255,255,255,0.15) solid;}
+.Utop .info{flex: 1;overflow: hidden;}
+.Utop .login-nav{background-color: rgba(0,0,0,0.25);border-radius: 30rpx;}
 
 
 .itemLists /deep/.cell-left .iconfont{width: 60upx;text-align: center;display: inline-block;}

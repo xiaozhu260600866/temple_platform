@@ -14,6 +14,14 @@
 			<view class="banner">
 				<myswiper :lists="data.silders.data"></myswiper>
 			</view>
+			<view class="topShare" v-if="shareTopBtn">
+				<view class="left fs-15">点击按钮分享朋友圈</view>
+				<dxButton type="primary" size="small" round @click="shareFriend = true,shareTopBtn = false">立即分享</dxButton>
+			</view>
+			<view class="shareTip" v-if="shareFriend">
+				<view class="share-overlay" @click="shareFriend = false"></view>
+				<image class="img" :src="getSiteName+'/images/share-tip.png'" mode="widthFix"></image>
+			</view>
 			<view class="index-nav">
 				<view class="INav_btn item_4 mb5 p5">
 					<view class="item ptb10" v-for="item in data.location.data" @click="goto(item.url,1)">
@@ -129,6 +137,8 @@
 				dateYear:'',
 				wxOpenTags:'',
 				projectListsNew:[],
+				shareFriend: false,
+				shareTopBtn: true,
 			}
 		},
 		onReachBottom() {

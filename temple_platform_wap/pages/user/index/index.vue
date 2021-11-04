@@ -1,23 +1,33 @@
 <template class="user-body">
 	<view>
 		<page :parentData="data" :formAction="formAction" ref="page"></page>
-		<div v-if="data.show">
-			<div class="Uhead-info bg-f">
-				<div class="Uhead-bg">
-					<image class="img" src="/static/mine-bg.png" mode="aspectFill" />
-				</div>
-				<div class="Utop plr20">
-					<div class="Uinfo">
-						<div class="header-img">
-							<img class="img" :src="data.user.headimgurl ? data.user.headimgurl :''"/>
-						</div>
-						<div>
-							<p class="fs-18 mt8 fc-white lh-28">{{data.user.username}}</p>
-							<!-- <p class="fs-16 lh-22 fc-white">您已随喜善款 {{data.orderSum}} 份</p> -->
-						</div>
-					</div>
-				</div>
-			</div>
+		<view v-if="data.show">
+			<view class="Uhead-info bg-f">
+				<view class="Uhead-bg">
+					<image class="img" src="/static/mine-bg.png" mode="aspectFill"></image>
+				</view>
+				<!-- 未登录/游客显示 -->
+				<view class="Utop plr20" >
+					<view class="header-img">
+						<image class="img" :src="getSiteName +'/images/nouserW.png'" ></image>
+					</view>
+					<myform :ruleform="ruleform" :vaildate="vaildate" :append="true" :data="v" @callBack="ajax">
+						<view slot="content">
+							<view class="login-nav pl20 pr15 lh-28 fc-white fs-14 bdr14">点击授权<span class="iconfont icon-right fs-10 fc-white pl3"></span></view>
+						</view>
+					</myform>
+				</view>
+				<!-- 已登录显示 -->
+				<view class="Utop plr20" v-if="hidd">
+					<view class="header-img">
+						<image class="img" :src="data.user.headimgurl ? data.user.headimgurl :''"></image>
+					</view>
+					<view>
+						<view class="fs-18 mt8 fc-white lh-28">{{data.user.username}}</view>
+						<!-- <view class="fs-16 lh-22 fc-white">您已随喜善款 {{data.orderSum}} 份</view> -->
+					</view>
+				</view>
+			</view>
 			<view class="block-sec top-sec">
 				<dx-nav-class :data="[
 					{url:'/pages/user/order/project',type: 1,icon:'iconfont icon-user-record',name:'我的功德'},
@@ -52,7 +62,7 @@
 					<view slot="right"><text class="fs-15 Arial fc-3">{{data.siteConfig.phone2}}</text></view>
 				</dx-list-cell>
 			</view>
-		</div>
+		</view>
 	</view>
 </template>
 

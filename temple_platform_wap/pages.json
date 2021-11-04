@@ -558,14 +558,14 @@
 		{
 			"pagePath": "pages/index/index",
 			"text": "首页",
-			"iconPath": "static/NA01.png",
-			"selectedIconPath": "static/NA02.png"
+			"iconPath": "static/A01.png",
+			"selectedIconPath": "static/A02.png"
 		},
 		{
 			"pagePath": "pages/user/index/index",
 			"text": "个人中心",
-			"iconPath": "static/ND01.png",
-			"selectedIconPath": "static/ND02.png"
+			"iconPath": "static/D01.png",
+			"selectedIconPath": "static/D02.png"
 		}]
 	}
 }
