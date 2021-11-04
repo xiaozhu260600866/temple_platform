@@ -16,10 +16,10 @@
 			</view>
 			<view class="topShare" v-if="shareTopBtn">
 				<view class="left fs-15">点击按钮分享朋友圈</view>
-				<dxButton type="primary" size="small" round @click="shareFriend = true,shareTopBtn = false">立即分享</dxButton>
+				<dxButton type="primary" size="small" round @click="showShare">立即分享</dxButton>
 			</view>
 			<view class="shareTip" v-if="shareFriend">
-				<view class="share-overlay" @click="shareFriend = false"></view>
+				<view class="share-overlay" @click="closeShare"></view>
 				<image class="img" :src="getSiteName+'/images/share-tip.png'" mode="widthFix"></image>
 			</view>
 			<view class="index-nav">
@@ -138,7 +138,7 @@
 				wxOpenTags:'',
 				projectListsNew:[],
 				shareFriend: false,
-				shareTopBtn: true,
+				shareTopBtn: false,
 			}
 		},
 		onReachBottom() {
@@ -157,6 +157,9 @@
 			this.postAjax("/projectLists.html",{show_index:1}).then(msg=>{
 				this.projectListsNew = msg.data.lists;
 			})
+			if(!uni.getStorageSync("shareTopBtn")){
+				this.shareTopBtn = true;
+			};
 		},
 		
 		onShow() {
@@ -169,6 +172,15 @@
 			this.onShow(this);
 		},
 		methods: {
+			closeShare(){
+				this.shareFriend = false;
+				uni.setStorageSync("shareTopBtn", 1);
+			},
+			showShare(){
+				this.shareFriend = true;
+				this.shareTopBtn = false;
+				
+			},
 			handleErrorFn(e){
 			        console.log('fail', e.detail);
 			    },

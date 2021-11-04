@@ -7,18 +7,14 @@
 					<image class="img" src="/static/mine-bg.png" mode="aspectFill"></image>
 				</view>
 				<!-- 未登录/游客显示 -->
-				<view class="Utop plr20" >
+				<view class="Utop plr20" @click="toWechatUser" v-if="data.user.nickname == '微信用户'">
 					<view class="header-img">
 						<image class="img" :src="getSiteName +'/images/nouserW.png'" ></image>
 					</view>
-					<myform :ruleform="ruleform" :vaildate="vaildate" :append="true" :data="v" @callBack="ajax">
-						<view slot="content">
-							<view class="login-nav pl20 pr15 lh-28 fc-white fs-14 bdr14">点击授权<span class="iconfont icon-right fs-10 fc-white pl3"></span></view>
-						</view>
-					</myform>
+					<view class="login-nav pl20 pr15 lh-28 fc-white fs-14 bdr14">点击授权<span class="iconfont icon-right fs-10 fc-white pl3"></span></view>
 				</view>
 				<!-- 已登录显示 -->
-				<view class="Utop plr20" v-if="hidd">
+				<view class="Utop plr20" v-else>
 					<view class="header-img">
 						<image class="img" :src="data.user.headimgurl ? data.user.headimgurl :''"></image>
 					</view>
@@ -100,6 +96,38 @@
 		},
 		
 		methods: {
+			toWechatUser(){
+				var args = new Object();
+				var url1 = window.location.href;
+				var url1 = url1.substr(url1.indexOf("?") + 1);
+				
+				var pairs = url1.split("&"); //在逗号处断开
+				for (var i = 0; i < pairs.length; i++) {
+					let pos = pairs[i].indexOf('='); //查找name=value
+					if (pos == -1) { //如果没有找到就跳过
+						continue;
+					}
+					var argname = pairs[i].substring(0, pos); //提取name
+					var value = pairs[i].substring(pos + 1); //提取value
+					if (argname != 'openid' && argname != "nickname" && argname != "source" && argname != "headimgurl") {
+						args[argname] = unescape(value); //存为属性
+					}
+				
+				}
+				let newUrl = window.location.href.substr(0, window.location.href.indexOf("?") + 1);
+				let pages = "/pages/user/index/index";
+				for (let key1 in args) {
+					pages += key1 + '=' + args[key1] + '&';
+				}
+				//let source = siteName + '/h5/';
+				let source = window.location.href.split("#")[0];
+				var url = this.getSiteName + '/openidForWechatUser?page=' + pages + '&source=' + source;
+				//alert(url);
+				let newUrl_ = url.replace("/?from=singlemessage#", "");
+				console.log(newUrl_);
+
+				window.location.href = newUrl_;
+			},
 			ajax() {
 				// this.$nextTick(()=>{
 				// 	this.$refs.page.share('观音开库','https://temple.doxinsoft.com/images/3033.jpg','日行一善');

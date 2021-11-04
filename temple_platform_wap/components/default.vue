@@ -124,13 +124,31 @@ export default {
 						title: title,
 						
 						imgUrl:logo,
-						desc:desc
+						desc:desc,
+						success: function () { 
+						                // 用户确认分享后执行的回调函数
+						                alert('分享成功1');
+						            },
+						            cancel: function () { 
+						                // 用户取消分享后执行的回调函数
+										  alert('分享成功');
+						            }
+
 					});
 					this.wx.onMenuShareTimeline({
 						title: title,
 						
 						imgUrl:logo,
-						desc:desc
+						desc:desc,
+						success: function () {
+						                // 用户确认分享后执行的回调函数
+						                alert('分享成功11');
+						            },
+						            cancel: function () { 
+						                // 用户取消分享后执行的回调函数
+										  alert('分享成功');
+						            }
+						
 					});
 
 				});
