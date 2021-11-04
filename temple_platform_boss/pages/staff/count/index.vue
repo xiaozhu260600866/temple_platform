@@ -3,30 +3,11 @@
 		<page :parentData="data" :formAction="formAction" ref="page"></page>
 		<view class="" v-if="data.user">
 			<searchType2 :searchType="searchType" :ruleform="ruleform" @searchDateCallBack="searchDateCallBack"></searchType2>
-			<!-- <view class="TypeNav bg-f">
-				<view class="navItem">
-					<view :class="['aLink','fs14',otherData.searchType == 'today' ? 'cur': '']" @click="changeShowType('today')">
-						<span class="span">今日</span>
-					</view>
-					<view :class="['aLink','fs14',otherData.searchType == 'yesterday' ? 'cur': '']" @click="changeShowType('yesterday')">
-						<span class="span">昨天</span>
-					</view>
-					<view :class="['aLink','fs14',otherData.searchType == 'thismonth' ? 'cur': '']" @click="changeShowType('thismonth')">
-						<span class="span">本月</span>
-					</view>
-					<view :class="['aLink','fs14',otherData.searchType == 'prevmonth' ? 'cur': '']" @click="changeShowType('prevmonth')">
-						<span class="span">上月</span>
-					</view>
-					<view :class="['aLink','fs14',otherData.searchType == 'summary' ? 'cur': '']" @click="changeShowType('summary')">
-						<span class="span">汇总</span>
-					</view>
-				</view>
-			</view> -->
 			<view class="stuff mb12">
 				<view class="stuff-sec bg-f flex flex-wrap">
 					<view class="sec-group" >
 						<image class="img" src="https://temple.doxinsoft.com/images/wap/boss-I01.png"></image>
-						<view class="p">线上捐赠</view>
+						<view class="p">随喜收益</view>
 						<view class="num">{{data.payed_count}}<text class="unit pr10">单</text>{{(putaway1amount + putaway0amount).toFixed(2)}}<text class="unit">元</text></view>
 					</view>
 					<!-- <view class="sec-group" @click="goto('/pages/boss/offline/lists/index',1)">
@@ -43,11 +24,11 @@
 				</view> -->
 				<view class="account_nav">
 					<view :class="['nav', putaway == 1 ? 'cur' : '']" @click="putaway=1;online=-1;">
-						<view class="txt">线上捐赠(上架)</view>
+						<view class="txt">随喜项目(上架)</view>
 						<view class="num">{{putaway1amount.toFixed(2)}}</view>
 					</view>
 					<view :class="['nav', putaway == 0 ? 'cur' : '']" @click="putaway=0;online=-1">
-						<view class="txt">线上捐赠(下架)</view>
+						<view class="txt">随喜项目(下架)</view>
 						<view class="num">{{putaway0amount.toFixed(2)}}</view></view>
 					<!-- <view style="height:55px;position: relative;" :class="['nav', online == 0 ? 'cur' : '']" @click="putaway=-1;online=0;">线下捐赠<view style="width:100%;position: absolute;top:25px;">{{data.payed_amount_}}</view></view> -->
 				</view>

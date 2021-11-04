@@ -33,17 +33,17 @@
 				</view>
 			</view>
 			<view class="sup-account bg-f pt12 mb12">
-				<view class="name fs-14 fc-7 text-center">总收益（已到账收益+未到账收益）</view>
+				<view class="name fs-14 fc-7 text-center">基本账户（随喜总数 - 平台服务费）</view>
 				<view class="flex-center flex-middle" @click="goto('/pages/staff/count/index',1)">
 					<view class="price fs-16">￥<span class="fs-30">{{data.price_all}}</span></view>
 				</view>
 				<view class="ac-group">
 					<view class="ac-row">
-						<view class="label">可提现收益</view>
+						<view class="label">账户余额</view>
 						<view class="value">￥<span>{{data.price}}</span></view>
 					</view>
 					<view class="ac-row">
-						<view class="label">已成功提现金额</view>
+						<view class="label">已提现</view>
 						<view class="value">￥<span>{{data.price_out}}</span></view>
 					</view>
 					<view class="ac-row">

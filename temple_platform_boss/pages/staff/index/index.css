@@ -6,7 +6,7 @@
 .sup-sec {display: flex;flex-wrap: wrap;padding: 20upx;background-color: #fff;margin-bottom: 24upx;}
 .sup-sec .sec-group{width: 25%;text-align: center;padding: 20upx 0;}
 .sup-sec .sec-group .icon{background: #999;width: 92upx;height: 92upx;text-align: center;line-height: 92upx;border-radius: 50%;margin: 0 auto;}
-.sup-sec .sec-group .icon_img .img{width: 92upx;height: 92upx;border-radius: 50%;display: flex;margin: 0 auto;}
+.sup-sec .sec-group .icon_img .img{width: 92upx;height: 92upx;border-radius: 40%;display: flex;margin: 0 auto;}
 .sup-sec .sec-group .name{font-size: 30upx;color: #353535;margin-top: 16upx;line-height: 48rpx;}
 
 
