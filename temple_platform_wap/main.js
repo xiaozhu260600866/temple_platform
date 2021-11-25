@@ -89,10 +89,8 @@ uni.removeStorageSync('distribution');
 App.mpType = 'app'
 
 
-import 'xiaozhu/wechatapp/css/global.css';
-import 'xiaozhu/wechatapp/css/global_upx.css';
-import 'xiaozhu/wechatapp/css/flex.css';
 import 'doxinui/css/global_icon.css';
+import 'doxinui/css/global_upx.css';
 import '@/public/weui/weui.css';
 import "@/public/font/iconfont.css";
 import '@/public/css/app.css';
