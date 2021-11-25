@@ -7,7 +7,7 @@
 			</view>
 			<view class="Dtop"> 
 				<view class="title">{{data.detail.name}}</view>
-				<view class="amount bg-f">
+				<view class="amount bg-f" v-if="data.detail.target_amount >0">
 					<!-- <view class="count flex-between">
 						<view class="p">已捐 <span class="fc-red plr3"> {{getAmount(data.detail.orderSum)}} </span> 份</view>
 						<view class="p">随喜次数<span>{{data.detail.orderNum}}</span>人</view>
@@ -22,7 +22,7 @@
 						<view class="sel-box flex w-b100"><view class="sel" :style="'width:'+data.detail.orderProgress+'%'"></view></view>
 						<!-- <view class="prov">{{data.detail.orderProgress}}%</view> -->
 					</view>
-					<view class="count flex">
+					<view class="count flex" >
 						<view class="item">
 							<view class="num">{{getAmount(data.detail.orderSum)}}元</view>
 							<view class="txt">已筹资</view>
