@@ -152,6 +152,26 @@ export default {
             "append_form_": 0,
             "label": "排序"
         },
+		{
+		    "name": "",
+		    "prop": "start_date",
+		    "datatype": "",
+		    "type": "date",
+		    "style":"width:160px",
+		    "defaultValue":0,
+		    "append_form_": 0,
+		    "label": "开始日期"
+		},
+		{
+		    "name": "",
+		    "prop": "end_date",
+		    "datatype": "",
+		    "type": "date",
+		    "style":"width:160px",
+		    "defaultValue":0,
+		    "append_form_": 0,
+		    "label": "结束日期"
+		},
         {
             "name": "",
             "prop": "can_post",
