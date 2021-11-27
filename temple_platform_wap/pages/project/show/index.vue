@@ -28,7 +28,7 @@
 							<view class="txt">已筹资</view>
 						</view>
 						<view class="item">
-							<view class="num">123天</view>
+							<view class="num">{{data.detail.leftDate < 0  ? 0 : data.detail.leftDate}}天</view>
 							<view class="txt">剩余时间</view>
 						</view>
 						<view class="item">
@@ -63,7 +63,7 @@
 				<view class="box">
 					<view class="tt flex">
 						<view class="name" @click="showType =0" :class="[showType == 0 ? 'hover' : '']">详情</view>
-						<view class="name" @click="showType = 1" :class="[showType == 1 ? 'hover' : '']">留言(<text class="num fc-red">{{data.orderCount}}</text>)</view>
+						<view class="name" @click="showType = 1" :class="[showType == 1 ? 'hover' : '']">功德动态(<text class="num fc-red">{{data.orderCount}}</text>)</view>
 					</view>
 					<view class="desc">
 						<!-- 详情 -->

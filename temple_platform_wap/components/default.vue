@@ -75,6 +75,7 @@ export default {
 				 let source = this.getSiteName + '/h5/';
 				//var url = this.getSiteName+'/openid?page='+pages+'&source='+source+'&site_name='+uni.getStorageSync("site_name");
 				 var url = source+'#'+pages+'site_name='+uni.getStorageSync("site_name");
+				 
 				console.log("分享url",url)
 				//alert(url);
 				// let site_name = this.getSiteName;
@@ -89,7 +90,7 @@ export default {
 				//  }else{
 				//  	url = site_name+'/openid?page='+page+'&source='+source;
 				//  }
-				console.log(url);
+				//alert(url);
 				 //alert(url)
 				/*if (url.indexOf('?') != -1) {
 						url+="&shareSource=share";
@@ -127,7 +128,7 @@ export default {
 						desc:desc,
 						success: function () { 
 						                // 用户确认分享后执行的回调函数
-						                alert('分享成功1');
+						                alert('分享成功');
 						            },
 						            cancel: function () { 
 						                // 用户取消分享后执行的回调函数
@@ -142,7 +143,7 @@ export default {
 						desc:desc,
 						success: function () {
 						                // 用户确认分享后执行的回调函数
-						                alert('分享成功11');
+						                alert('分享成功');
 						            },
 						            cancel: function () { 
 						                // 用户取消分享后执行的回调函数

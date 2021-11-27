@@ -13,6 +13,7 @@ if(getOptions("site_name")){
 	if(uni.getStorageSync('site_name') && new_site_name!=uni.getStorageSync('site_name')){
 		 gotoWechat=0; 
 	}
+	//alert(new_site_name)
 	uni.setStorageSync('site_name', new_site_name);	
 }
 
@@ -64,6 +65,7 @@ if (!gotoWechat) {
 	}
 	//let source = siteName + '/h5/';
 	let source = window.location.href.split("#")[0];
+	//alert(pages)
 	var url = siteName + '/openid?page=' + pages + '&source=' + source;
 	//alert(url);
 	let newUrl_ = url.replace("/?from=singlemessage#", "");
