@@ -17,6 +17,10 @@ if(getOptions("site_name")){
 	uni.setStorageSync('site_name', new_site_name);	
 }
 
+if(!uni.getStorageSync('site_name')){
+	uni.setStorageSync('site_name', "shanglinsi");		
+}
+
 if (getOptions('openid') && getOptions('new2') && gotoWechat) {
 	let userInfo = {
 		nickName: getOptions('nickname'),
