@@ -71,6 +71,7 @@ if (!gotoWechat) {
 	let source = window.location.href.split("#")[0];
 	//alert(pages)
 	var url = siteName + '/openid?page=' + pages + '&source=' + source;
+	
 	//alert(url);
 	let newUrl_ = url.replace("/?from=singlemessage#", "");
 	console.log(newUrl_);
