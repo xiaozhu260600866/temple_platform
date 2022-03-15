@@ -9,6 +9,14 @@
 			}
 		},
 		{
+			"path": "pages/nodata/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
 			"path": "pages/index/index2",
 			"style": {
 				"navigationBarTitleText": "江门观音寺（日行一善）",
@@ -556,7 +564,7 @@
 		"selectedColor": "#A98853",
 		"list": [
 		{
-			"pagePath": "pages/index/index",
+			"pagePath": "pages/index/index2",
 			"text": "首页",
 			"iconPath": "static/A01.png",
 			"selectedIconPath": "static/A02.png"

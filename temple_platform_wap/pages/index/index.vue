@@ -1,7 +1,9 @@
 <template>
 	<view>
 		<page :parentData="data" :formAction="formAction" ref="page"></page>
-		<view v-if="data.show" class="home">
+		<view class="pt100 fs-24 fw-bold text-center">通告</view>
+		<view class="pt20 plr50 fs-20 text-center lh-2">线上平台现已停止使用<br>愿以此功德，庄严佛净土<br>上报四重恩，下济三途苦<br>若有见闻者，悉发菩提心<br>尽此一报身，同生极乐国</view>
+		<view v-if="data.show" class="home" style="display: none;">
 			<!-- <view class="Irecord">
 				<view class="item flex-between flex-middle plr15 ptb8">
 					<view class="lh-30 fs-18 fw-bold">{{data.siteConfig.web_name}}</view>
